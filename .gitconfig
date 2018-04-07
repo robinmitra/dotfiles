@@ -1,0 +1,19 @@
+[user]
+  name = Robin Mitra
+  useConfigOnly = true # force specifying email for each new repository.
+
+[alias]
+  # These are set in '~/.git.aliases'.
+
+[core]
+  excludesfile = ~/.gitignore.global
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[include]
+  path = ~/.git.aliases
+
+[fetch]
+  prune = true
+
+[diff]
+  compactionHeuristic = true # more correct diff (but slow).
