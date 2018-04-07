@@ -5,4 +5,7 @@
   co = checkout
   d = diff --color-words --abbrev
   fpush = push --force
+  p = push
+  po = push origin
+  pu = push -u origin
   s = status
