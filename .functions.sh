@@ -5,18 +5,18 @@
 #   Robin Mitra <robinmitra1@gmail.com>
 #
 
-#############
-## General ##
-#############
+###########
+# General #
+###########
 
 # Create a new directory and enter it.
 function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-#########
-## Git ##
-#########
+#######
+# Git #
+#######
 
 is_in_git_repo() {
   git rev-parse HEAD > /dev/null 2>&1

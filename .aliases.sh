@@ -4,16 +4,16 @@
 #   Robin Mitra <robinmitra1@gmail.com>
 #
 
-###############
-## Variables ##
-###############
+#############
+# Variables #
+#############
 
 WORK="~/Code/work"
 PLAY="~/Code/play"
 
-#############
-## General ##
-#############
+###########
+# General #
+###########
 
 alias cp="cp -v"
 alias mv="mv -v"
@@ -27,39 +27,39 @@ alias c="highlight -O ansi -l" # in other words, a better 'cat'.
 alias dspace="df -Hl" # H: human-format (with base 10), l: local mounts only.
 alias fsize="stat -f \"%z bytes\""
 
-#########
-## ZSH ##
-#########
+#######
+# ZSH #
+#######
 
 alias zr="source ~/.zshrc"
 alias zc="vim ~/.zshrc"
 alias za="vim ~/.aliases.sh"
 
-###############
-## Locations ##
-###############
+#############
+# Locations #
+#############
 
 alias work="cd $WORK"
 alias play="cd $PLAY"
 
-#########
-## Git ##
-#########
+#######
+# Git #
+#######
 
 alias gpo="gp origin"
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset %C(dim cyan)▹%Creset %Cgreen%cd%Creset %C(dim cyan)▹%Creset %C(bold blue)%an %C(black)<%ae>%Creset %C(auto)%+D%Creset %n%s%n' --date=format:'%a %d %b %y, %H:%m'"
 alias glogc="git log --color --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %C(dim cyan)▹%Creset %s %C(dim cyan)▹%Creset %Cgreen%cr%Creset %C(dim cyan)▹%Creset %C(bold blue) %an%Creset'"
 alias gla="git config -l | grep alias | cut -c 7-"
 
-################
-## Kubernetes ##
-################
+##############
+# Kubernetes #
+##############
 
 alias kpods="kubectl get pods -o custom-columns=NAME:.metadata.name,READY:.status.containerStatuses[*].ready,STATUS:.status.phase,RESTARTS:.status.containerStatuses[*].restartCount,START:.status.startTime,IP:.status.podIP,NODE:.spec.nodeName,VERSION:.metadata.resourceVersion,IMAGE:.status.containerStatuses[*].image,LABELS:.metadata.labels"
 
-##############
-## Suffixes ##
-##############
+############
+# Suffixes #
+############
 
 alias -s js=vim
 alias -s java=vim

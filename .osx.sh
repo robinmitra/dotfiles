@@ -121,4 +121,3 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-

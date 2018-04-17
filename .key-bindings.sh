@@ -5,9 +5,9 @@
 #   Robin Mitra <robinmitra1@gmail.com>
 #
 
-#########
-## Git ##
-#########
+#######
+# Git #
+#######
 
 join-lines() {
   local item
