@@ -1,7 +1,8 @@
 " Line-height.
-set linespace=15
-" Set custom font (use _ for spaces) and set font size.
-set guifont=Fira_Code:h14
+set linespace=1 " anything above this screws up airline symbol alignment!
+" Set custom font (use _ or \ for spaces) and set font size.
+set guifont=Fira\ Code:h14
+"set guifont=Fira\ Mono\ for\ Powerline:h14 " Ligature not supported unfortunnately.
 " Enable => ligature support.
 set macligatures
 " Disable ugly GUI tabs in MacVim.

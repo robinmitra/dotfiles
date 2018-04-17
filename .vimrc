@@ -75,6 +75,10 @@ call plug#end()
 " # Core #
 " ########
 
+" # Commands #
+command! Day colorscheme fruchtig
+command! Night colorscheme Dracula
+
 " # Settings #
 
 " Use latest Vim settings/options (as opposed to being compatible with Vi).
@@ -125,8 +129,12 @@ set splitbelow
 set splitright
 
 " - Visual -
-colorscheme gruvbox
-"highlight LineNr guibg=bg
+" Set colour scheme based on time of day.
+if system('date +%H') > 18
+ execute 'Day' 
+else 
+  execute 'Night'
+endif
 " Force 256 colors in terminal Vim.
 set t_CO=256
 " Color scheme: seoul256 (dark):
@@ -135,13 +143,11 @@ set t_CO=256
 let g:seoul256_background = 235
 " Hide vertical split lines.
 highlight vertsplit guifg=bg guibg=bg
-" Hack to add left padding using fold.
-set foldcolumn=0
-highlight foldcolumn guibg=bg
-
-" # Commands #
-command! Day colorscheme fruchtig
-command! Night colorscheme Dracula
+" Hack to add left padding using fold (not using currently).
+"set foldcolumn=1
+"highlight foldcolumn guibg=bg
+" Make background of linenumbers match window background (not using currently).
+"highlight LineNr guibg=bg
 
 " # Functions #
 
@@ -167,6 +173,7 @@ function! s:rotate_colors(rev)
   redraw
   echo 'Colour scheme:' name
 endfunction
+
 
 " # Mappings #
 
@@ -205,6 +212,16 @@ augroup END
 " ############
 " # Plug-ins #
 " ############
+
+" -----------
+" - Airline -
+" -----------
+
+" # Settings #
+
+" Smarter tab line.
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " -------
 " - FZF -
