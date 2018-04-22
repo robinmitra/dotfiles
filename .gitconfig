@@ -17,3 +17,5 @@
 
 [diff]
   compactionHeuristic = true # more correct diff (but slow).
+[commit]
+  gpgsign = true

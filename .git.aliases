@@ -4,8 +4,12 @@
   ca = commit -am
   co = checkout
   d = diff --color-words --abbrev
+  f = fetch
   fpush = push --force
+  ls = ls-files 
   p = push
   po = push origin
   pu = push -u origin
-  s = status
+  s = status -sb
+  unstage = reset HEAD --
+  discard = checkout --
