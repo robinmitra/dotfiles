@@ -16,12 +16,18 @@ tap "universal-ctags/universal-ctags" # CTags for Vim
 
 brew "openssl"
 brew "awscli"
+brew "cfssl"                # Cloudflare's PKI toolkit.
 brew "diff-so-fancy"        # Fancier diff.
 brew "fd"                   # Yet another alternative to 'find'.
+brew "direnv"               # Directory-specific environment variables.
 brew "fzf"                  # Fuzzy search.
 brew "git"
+brew "gnupg"
+brew "hub"                  # Github helper.
 brew "highlight"            # Syntax highlighting.
+brew "htop"                 # Better 'top'.
 brew "httpie"               # Better 'curl'.
+brew "jq"                   # JSON processor.
 brew "macvim", link: false
 brew "ncdu"                 # Disk space analyser.
 brew "neovim"
