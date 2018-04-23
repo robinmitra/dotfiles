@@ -10,8 +10,10 @@ call plug#begin('~/.vim/plugged')
 " -----------
 
 Plug 'bfontaine/Brewfile.vim'             " Syntax highlighting for Brewfile.
+Plug 'bkad/CamelCaseMotion'               " For taming annoying extremelyLongCamelCasedStrings.
 Plug 'lilydjwg/colorizer'                 " Colourise CSS colours.
 Plug 'mattn/emmet-vim'                    " HTML expansion.
+Plug 'vim-scripts/delimitMate.vim'        " For closing stuff (e.g. quotes).
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'                   " Vim wrapper for FZF
 Plug 'Yggdroot/indentLine'                " Indentation guides.
@@ -21,9 +23,11 @@ Plug 'junegunn/gv.vim'                    " Git commit browser (uses Fugitive).
 Plug 'junegunn/limelight.vim'             " Keep a block in focus, dim everything else.
 Plug 'scrooloose/nerdtree',               " File tree.
   \{ 'on':  'NERDTreeToggle' }        
+Plug 'vim-scripts/ReplaceWithRegister'    " For replacing existing text with contents of register without first deleting.
 Plug 'majutsushi/tagbar'                  " Intelligently placed tags (symbols) in a sidebar.
 Plug 'mbbill/undotree'                    " Visualise Vim's undo tree.
 Plug 'vim-airline/vim-airline'            " A more useful status line.
+Plug 'vim-airline/vim-airline-themes'     " More themes for airline.
 Plug 'ntpeters/vim-better-whitespace'     " Trip whitespaces.
 Plug 'tpope/vim-commentary'               " Smart commenting.
 Plug 'tpope/vim-fugitive'                 " Git wrapper.
@@ -31,6 +35,7 @@ Plug 'tpope/vim-surround'                 " Helps in wrapping stuff around other
 Plug 'airblade/vim-gitgutter'             " Git status indicators in gutter.
 Plug 'jreybert/vimagit'                   " Better Git workflow.
 Plug 'sheerun/vim-polyglot'               " Syntax highlighting for a whole plethora of languages.
+Plug 'wakatime/vim-wakatime'              " Automatic time tracking and metrics.
 Plug 'vim-scripts/YankRing.vim'           " Sort of like yank-manager.
 " Deoplete
 if has('nvim')
@@ -40,6 +45,12 @@ else
   "Plug 'roxma/nvim-yarp'
   "Plug 'roxma/vim-hug-neovim-rpc'
 endif
+" Could potentially be useful:
+" Plug 'tpope/vim-rhubarb'                " Like Fugitive but for Github.
+" Plug 'eugen0329/vim-esearch'            " Sublime like project-wide search.
+" Plug 'tpope/vim-abolish'                " Interesting usecase.
+" Plug 'tpope/vim-repeat'                 " Enable repeating supported plugin maps with '.'.
+" Plug 'wellle/targets.vim'               " Looks interesting.
 
 " -----------
 " - Colours -
@@ -103,6 +114,9 @@ set number relativenumber
 "set formatoptions=cro
 " Make backspace sane again!
 set backspace=indent,eol,start
+" Enable enhanced command line completion, with possible matches shown above a
+" command when 'tab' is pressed.
+set wildmenu
 " Set leader as comma since default leader of backshash isn't very convenient.
 let mapleader = ','
 
@@ -332,6 +346,17 @@ augroup END
 " Smarter tab line.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+" ###################
+" # CamelCaseMotion #
+" ###################
+
+" # Mappings #
+
+" Motion.
+map <silent> ]w <plug>CamelCaseMotion_w
+map <silent> ]b <plug>CamelCaseMotion_b
+map <silent> ]e <plug>CamelCaseMotion_e
 
 " ############
 " # Deoplete #
