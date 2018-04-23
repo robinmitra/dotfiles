@@ -2,12 +2,13 @@
 # Taps #
 ########
 
-tap "homebrew/core"
-tap "homebrew/bundle"                 # Makes it possible to use this file!
-tap "homebrew/services"               # Simplifies the process of running services with launchctl.
 tap "caskroom/fonts"                  # For fonts (e.g. Fira Code)
 tap "caskroom/versions"
 tap "caskroom/cask"                   # For installing Casks.
+tap "goles/battery"                   # For battery.
+tap "homebrew/core"
+tap "homebrew/bundle"                 # Makes it possible to use this file!
+tap "homebrew/services"               # Simplifies the process of running services with launchctl.
 tap "universal-ctags/universal-ctags" # CTags for Vim
 
 ############
@@ -22,6 +23,7 @@ brew "fd"                   # Yet another alternative to 'find'.
 brew "direnv"               # Directory-specific environment variables.
 brew "fzf"                  # Fuzzy search.
 brew "git"
+brew "git-extras"           # Pretty useful extra commands for Git.
 brew "gnupg"
 brew "hub"                  # Github helper.
 brew "highlight"            # Syntax highlighting.
@@ -29,6 +31,7 @@ brew "htop"                 # Better 'top'.
 brew "httpie"               # Better 'curl'.
 brew "jq"                   # JSON processor.
 brew "macvim", link: false
+brew "mas"                  # CLI for Mac App Store.
 brew "ncdu"                 # Disk space analyser.
 brew "neovim"
 brew "nmap"                 # Port scanning.
@@ -38,12 +41,18 @@ brew "pv"                   # Monitor progress through a pipe.
 brew "pyenv"                # Python version manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
+brew "spark"                # Sparkline.
 brew "st"                   # Simple statistics tool.
 brew "terminal-notifier"
 brew "terraform"
 brew "the_silver_searcher"  # Yet another alternative to 'grep'.
+brew "thefuck"              # Correct the f*cked up commands! 
+brew "trash" 
 brew "tree"                 # GNU tree utility.
+brew "watch"
+brew "watchman"             # File watching service.
 brew "wget"
+brew "wrk"                  # Better alternative to 'ab'.
 brew "z"                    # Jump to directories based on "frecency".
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
@@ -51,27 +60,10 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # Casks #
 #########
 
+cask "alfred"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "boom-3d"              # You know, for sound!
-cask "dash"                 # Documentation on steroids.
-cask "free-ruler"           # Old but pretty solid visual ruler.
-cask "genymotion"
-cask "hyper"                # I prefer iTerm 2 though.
-cask "jetbrains-toolbox"
-cask "keybase"
-cask "kitematic"            # Visual Docker container manager.
-cask "lastpass"
-cask "macvim"
-cask "noti"                 # Android notifications on Mac.
-cask "rescuetime"           # So I can track my distractions!
-cask "skitch"               # Better screenshot-ting.
-cask "slack"
-cask "spectacle"            # Window organiser I can't live without!
-cask "spotify"
-cask "virtualbox"
-cask "visual-studio-code"
-cask "vivaldi"
 cask "caskroom/fonts/font-consolas-for-powerline"
 cask "caskroom/fonts/font-fira-code"                      # Coolest font ever.
 cask "caskroom/fonts/font-fira-mono-for-powerline"
@@ -82,3 +74,52 @@ cask "caskroom/versions/docker-edge"
 cask "caskroom/versions/firefox-developer-edition"
 cask "caskroom/versions/java8"
 cask "caskroom/versions/opera-developer"
+cask "dash"                 # Documentation on steroids.
+cask "dropbox"
+cask "evernote"
+cask "fantastical"          # The ultimate calendar.
+cask "free-ruler"           # Old but pretty solid visual ruler.
+cask "gas-mask"             # Hosts file manager.
+cask "genymotion"
+cask "google-chrome"
+cask "hyper"                # I prefer iTerm 2 though.
+cask "imageoptim"           # Makes images take less space without sacrificing quality.
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "keybase"
+cask "kitematic"            # Visual Docker container manager.
+cask "lastpass"
+cask "licecap"              # Gif recording.
+cask "macvim"
+cask "ngrok"                # Localhost HTTP tunneling FTW!
+cask "noti"                 # Android notifications on Mac.
+cask "now" 
+cask "qlmarkdown"           # Quicklook generator for markdown files.
+cask "qlprettypatch"        # Quicklook generator for patch files.
+cask "qlstephen"            # Quicklook generator for text files without extensions.
+cask "quicklook-csv"        # Quicklook generator for CSV files.
+cask "quicklook-json"       # Quicklook generator for JSON files.
+cask "paw"
+cask "rescuetime"           # So I can track my distractions!
+cask "sequel-pro"
+cask "skitch"               # Better screenshot-ting.
+cask "slack"
+cask "spectacle"            # Window organiser I can't live without!
+cask "spotify"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "vivaldi"
+
+#############
+# App Store #
+#############
+
+mas "Amphetamine", id: 937984704            # Keeps Mac awake!
+mas "Bear", id: 1091189122
+mas "Byword", id: 420212497
+mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
+mas "Noizio", id: 928871589                 # Background noise simulator.
+mas "Pixave", id: 924891282
+mas "SnippetsLab", id: 1006087419
+mas "Unsplash Wallpapers", id: 1284863847
+mas "Xcode", id: 497799835
