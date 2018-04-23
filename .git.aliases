@@ -1,15 +1,33 @@
 [alias]
+  a = add .
+  ai = add -p                           # Interactively add.
+  aliases = config --get-regexp alias
+  b = branch
+  bren = branch -m
   amend = commit --amend
-  c = commit -m
-  ca = commit -am
+  cs = diff --stat '@{0 day ago}'       # Change stats in the working directory.
+  ci = commit -m
+  cia = commit -am
   co = checkout
+  con = checkout -b
+  contribs = shortlog -sn               # List of contributors with commit counts.
   d = diff --color-words --abbrev
+  db = branch -d
+  dbf = branch -D
+  discard = checkout --
   f = fetch
   fpush = push --force
+  last = log -1 HEAD
+  latest = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)' # Recently used branches.
+  lc = show HEAD
   ls = ls-files 
   p = push
   po = push origin
-  pu = push -u origin
+  pou = push -u origin
+  remotes = remote -v
+  rh = reset --hard
+  rhh = reset --hard HEAD
   s = status -sb
+  stashes = stash list
   unstage = reset HEAD --
-  discard = checkout --
+  unstash = stash pop
