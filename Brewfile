@@ -20,6 +20,7 @@ brew "awscli"
 brew "cfssl"                # Cloudflare's PKI toolkit.
 brew "diff-so-fancy"        # Fancier diff.
 brew "fd"                   # Yet another alternative to 'find'.
+brew "firebase-cli"
 brew "direnv"               # Directory-specific environment variables.
 brew "fzf"                  # Fuzzy search.
 brew "git"
@@ -53,6 +54,7 @@ brew "watch"
 brew "watchman"             # File watching service.
 brew "wget"
 brew "wrk"                  # Better alternative to 'ab'.
+brew "yarn"
 brew "z"                    # Jump to directories based on "frecency".
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
@@ -61,6 +63,7 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 #########
 
 cask "alfred"
+cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "boom-3d"              # You know, for sound!
@@ -91,6 +94,7 @@ cask "kitematic"            # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
 cask "macvim"
+cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
 cask "now" 
@@ -109,6 +113,7 @@ cask "spotify"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vivaldi"
+cask "whatsapp"
 
 #############
 # App Store #
