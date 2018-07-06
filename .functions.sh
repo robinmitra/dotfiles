@@ -22,6 +22,18 @@ is_in_git_repo() {
   git rev-parse HEAD > /dev/null 2>&1
 }
 
+function setup-gpg() {
+  is_in_git_repo || return 
+  if [[ -z $1 ]]; then
+    EMAIL=$(git config user.email)
+  else
+    EMAIL=$(gpg --list-secret-keys --keyid-format LONG $1 | sed -n '3p' | cut -d '<' -f 2 | cut -d '>' -f 1)
+  fi
+  echo Setting up GPG key for email \'$EMAIL\' as commit signing key for this repo.
+  git config user.signingKey $(gpg --list-secret-keys --keyid-format LONG $EMAIL | cut -d ' ' -f 4 | cut -d '/' -f 2 | sed -n '1p')
+  echo GPG key with ID \'$(git config user.signingKey)\' set.
+}
+
 fzf-down() {
   fzf --height 50% "$@" --border
 }
