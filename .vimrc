@@ -105,7 +105,7 @@ call plug#end()
 " Use latest Vim settings/options (as opposed to being compatible with Vi).
 set nocompatible
 " Allow switching to another file even when current buffer has unsaved changes.
-set hidden
+"set hidden
 " Syntax highlighting.
 syntax on
 " Hybrid line numbers.
@@ -373,7 +373,7 @@ let g:deoplete#enable_at_startup = 1
 " # Settings #
 
 " Default fzf layout - down / up / left / right
-let g:fzf_layout = { 'right': '~35%' }
+let g:fzf_layout = { 'down': '~35%' }
 " [Tags] Command to generate tags file - 'ag' to ensure Git ignored files aren't tagged.
 let g:fzf_tags_command = 'ag -l | ctags -L-'
 
@@ -408,12 +408,12 @@ nmap <D-e> :History<cr>
 command! -bang -nargs=* Ag
   \ call fzf#vim#ag(<q-args>,
   \                 <bang>0 ? fzf#vim#with_preview('up:60%')
-  \                         : fzf#vim#with_preview('down:50%:hidden', '?'),
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
   \                 <bang>0)
 
 " Show preview of files for FZF's 'Files' command.
 command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview('down:50%'), <bang>0)
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview('right:50%'), <bang>0)
 
 " Show preview of files for FZF's 'GFiles' command (can't figure out for 'GFiles?').
 "command! -bang -nargs=? GFiles call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview('down:50%'), <bang>0)
@@ -454,7 +454,7 @@ let g:undotree_DiffpanelHeight = 7
 
 "let g:indentLine_setConceal = 0
 " Temporarily disabling by default due to issue where command output isn't shown.
-let g:indentLine_enabled = 0
+let g:indentLine_enabled = 1
 
 " ------------
 " - Greplace -
@@ -481,11 +481,28 @@ nmap <D-7> :TagbarToggle<cr>
 
 " Let ^6 return from NERDTree window.
 let g:NERDTreeCreatePrefix='silent keepalt keepjumps'
+" Also change working directory when changing root.
+let g:NERDTreeChDirMode = 2
 
 function! s:attempt_select_last_file()
   let l:previous=expand('#:t')
   if l:previous != ''
     call search('\v<' . l:previous . '>')
+  endif
+endfunction
+
+" Check if NERDTree is open or active
+function! IsNERDTreeOpen()        
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+" file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    " echom "Syncing tree..."
+    NERDTreeFind
+    wincmd p
   endif
 endfunction
 
@@ -503,12 +520,16 @@ nnoremap <silent> - :silent edit <C-R>=empty(expand('%')) ? '.' : expand('%:p:h'
 
 " # Auto-commands #
 
+" Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
+
 augroup MyNERDTree
   autocmd!
   " Have NERDTree open when Vim starts (currently disabled).
-  " autocmd VimEnter * :NERDTreeToggle
+  autocmd VimEnter * :NERDTreeToggle
   " Attempt to select current file in NERDTree.
   autocmd User NERDTreeInit call s:attempt_select_last_file()
+
 augroup END
 
 " ---------
