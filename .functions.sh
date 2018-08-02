@@ -34,6 +34,16 @@ function setup-gpg() {
   echo GPG key with ID \'$(git config user.signingKey)\' set.
 }
 
+function setup-work-repo() {
+  git config user.email "robin.mitra@digital.cabinet-office.gov.uk"
+  setup-gpg
+}
+
+function setup-personal-repo() {
+  git config user.email "robinmitra1@gmail.com"
+  setup-gpg
+}
+
 fzf-down() {
   fzf --height 50% "$@" --border
 }
