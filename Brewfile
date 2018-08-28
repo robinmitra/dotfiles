@@ -23,6 +23,7 @@ brew "fd"                   # Yet another alternative to 'find'.
 brew "firebase-cli"
 brew "direnv"               # Directory-specific environment variables.
 brew "fzf"                  # Fuzzy search.
+brew "terraform_landscape"            # Better formatting for terraform diffs.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "gnupg"
@@ -77,6 +78,7 @@ cask "caskroom/versions/docker-edge"
 cask "caskroom/versions/firefox-developer-edition"
 cask "caskroom/versions/java8"
 cask "caskroom/versions/opera-developer"
+cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current app.
 cask "dash"                 # Documentation on steroids.
 cask "dropbox"
 cask "evernote"
