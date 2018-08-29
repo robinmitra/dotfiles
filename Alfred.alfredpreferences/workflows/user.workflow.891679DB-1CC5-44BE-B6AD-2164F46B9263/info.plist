@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.customct.zipinfo</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>1DE79E40-40E4-4F57-9481-ED63189A264C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C68A6609-E3E2-4462-9CA7-0B867353B8BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Guay</string>
+	<key>description</key>
+	<string>View whats in a zip file without unzipping.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Zip Info</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>zi:view</string>
+				<key>scopes</key>
+				<array>
+					<string>/Volumes/richardguay/Documents</string>
+					<string>/Volumes/richardguay/Dropbox (Envato)</string>
+					<string>/Volumes/richardguay/Dropbox (Personal)</string>
+				</array>
+				<key>subtext</key>
+				<string>Zip Info</string>
+				<key>title</key>
+				<string>View a Zip File</string>
+				<key>types</key>
+				<array>
+					<string>public.zip-archive</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>1DE79E40-40E4-4F57-9481-ED63189A264C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/usr/bin/zipinfo "{query}" | python "./PyCon.py" &gt;/dev/null 2&gt;&amp;1 &amp;</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C68A6609-E3E2-4462-9CA7-0B867353B8BC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow is created by Richard Guay. Visit http://customct.com/alfred-2-workflows for even more fun!
+
+commands:
+
+zi:view      type in a name and it will start showing zip files with that name. When you see the one you want, select it and a python window will pop up showing you the contents of the zip file using zipinfo command.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1DE79E40-40E4-4F57-9481-ED63189A264C</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>C68A6609-E3E2-4462-9CA7-0B867353B8BC</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://customct.com/alfred-2-workflows</string>
+</dict>
+</plist>

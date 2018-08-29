@@ -1,0 +1,506 @@
+/*
+CodeMirror Theme setup to Less Variable Definitions.
+by Richard Guay
+*/
+
+@EditorLineHeight: 1.3em;
+@EditorBackground: #262626;
+@EditorTextColor: #EBEFE7;
+@EditorShodowColor: #262626;
+@EditorSelectedColor: #45443B;
+@EditorCursorColor: white;
+@EditorMatchBracketColor: #7EFC7E;
+@EditorGuttersBackgroundColor: #262626;
+@EditorGuttersBorderColor: #aaa;
+@EditorGuttersMarkerColor: #599eff;
+@EditorGuttersMarkerSubtleColor: #777;
+@EditorLineNumberColor: #777;
+@EditorKeywordColor: #599eff;
+@EditorAtomColor: #C2B470;
+@EditorNumberColor: #B35E4D;
+@EditorDefColor: white;
+@EditorVariableColor: #D9BF8C;
+@EditorVariable-2Color: #669199;
+@EditorVariable-3Color: white;
+@EditorPropertyColor: #92A75C;
+@EditorOperatorColor: #92A75C;
+@EditorCommentColor: #666;
+@EditorStringColor: #BCD279;
+@EditorString-2Color: #f50;
+@EditorMetaColor: #738C73;
+@EditorQualifierColor: #555;
+@EditorBuiltinColor: #ff9e59;
+@EditorBracketColor: #EBEFE7;
+@EditorTagColor: #669199;
+@EditorAttributeColor: #00c;
+@EditorHeaderColor: #a0a;
+@EditorQuoteColor: #090;
+@EditorHrColor: #999;
+@EditorLinkColor: #00c;
+@EditorErrorColor: #9d1e15;
+@ActivelineBackgroundColor: #3C3A3A;
+@MatchingBracketBorderColor: grey;
+@MatchingBracketColor: white;
+
+@StatusLineEditMode: rgb(98, 105, 255);
+@StatusLineTitle:		rgb(98, 247, 255);
+@StatusLineMode:		rgb(98, 255, 149);
+@StatusLineLineNum:	rgb(224, 217, 87);
+@StatusLineColNum:	rgb(87, 212, 224);
+@StatusLineBackground: pink;
+
+@Dialog-Color:            #333;
+@Dialog-Border-Color:     #eee;
+@DialogBackgroundColor:   white;
+
+@FoldmarkerColor: blue;
+@FoldmarkerShadowColor: #b9f;
+
+@HintsBackgroundColor: white;
+@HintsBorderColor: silver;
+@HintActiveBackground: #ae9;
+@HintActiveColor: white;
+
+.cm-s-aedefault {
+    line-height: @EditorLineHeight;
+}
+.cm-s-aedefault.CodeMirror {
+    background: @EditorBackground;
+    color: @EditorTextColor;
+    text-shadow: 0 -1px 1px @EditorShodowColor;
+}
+.cm-s-aedefault div.CodeMirror-selected {
+    background: @EditorSelectedColor !important;
+}
+.cm-s-aedefault .CodeMirror-cursor {
+    border-left: 1px solid @EditorCursorColor !important;
+}
+.cm-s-aedefault pre {
+    padding: 0 8px;
+}
+/*editable code holder*/
+
+.cm-s-aedefault.CodeMirror span.CodeMirror-matchingbracket {
+    color: @EditorMatchBracketColor;
+}
+.cm-s-aedefault .CodeMirror-gutters {
+    background: @EditorGuttersBackgroundColor;
+    border-right: 1px solid @EditorGuttersBorderColor;
+}
+.cm-s-aedefault .CodeMirror-guttermarker {
+    color: @EditorGuttersMarkerColor;
+}
+.cm-s-aedefault .CodeMirror-guttermarker-subtle {
+    color: @EditorGuttersMarkerSubtleColor;
+}
+.cm-s-aedefault .CodeMirror-linenumber {
+    color: @EditorLineNumberColor;
+}
+.cm-s-aedefault span.cm-keyword {
+    color: @EditorKeywordColor;
+}
+.cm-s-aedefault span.cm-atom {
+    color: @EditorAtomColor;
+}
+.cm-s-aedefault span.cm-number {
+    color: @EditorNumberColor;
+}
+.cm-s-aedefault span.cm-def {
+    color: @EditorDefColor;
+}
+.cm-s-aedefault span.cm-variable {
+    color: @EditorVariableColor;
+}
+.cm-s-aedefault span.cm-variable-2 {
+    color: @EditorVariable-2Color;
+}
+.cm-s-aedefault span.cm-variable-3 {
+    color: @EditorVariable-3Color;
+}
+.cm-s-aedefault span.cm-property {
+    color: @EditorPropertyColor;
+}
+.cm-s-aedefault span.cm-operator {
+    color: @EditorOperatorColor;
+}
+.cm-s-aedefault span.cm-comment {
+    color: @EditorCommentColor;
+}
+.cm-s-aedefault span.cm-string {
+    color: @EditorStringColor;
+}
+.cm-s-aedefault span.cm-string-2 {
+    color: @EditorString-2Color;
+}
+.cm-s-aedefault span.cm-meta {
+    color: @EditorMetaColor;
+}
+.cm-s-aedefault span.cm-qualifier {
+    color: @EditorQualifierColor;
+}
+.cm-s-aedefault span.cm-builtin {
+    color: @EditorBuiltinColor;
+}
+.cm-s-aedefault span.cm-bracket {
+    color: @EditorBracketColor;
+}
+.cm-s-aedefault span.cm-tag {
+    color: @EditorTagColor;
+}
+.cm-s-aedefault span.cm-attribute {
+    color: @EditorAttributeColor;
+}
+.cm-s-aedefault span.cm-header {
+    color: @EditorHeaderColor;
+}
+.cm-s-aedefault span.cm-quote {
+    color: @EditorQuoteColor;
+}
+.cm-s-aedefault span.cm-hr {
+    color: @EditorHrColor;
+}
+.cm-s-aedefault span.cm-link {
+    color: @EditorLinkColor;
+}
+.cm-s-aedefault span.cm-error {
+    color: @EditorErrorColor;
+}
+.cm-s-aedefault .CodeMirror-activeline-background {
+    background: @ActivelineBackgroundColor !important;
+}
+.cm-s-aedefault .CodeMirror-matchingbracket {
+    outline: 1px solid @MatchingBracketBorderColor;
+    color: @MatchingBracketColor !important;
+}
+
+.CodeMirror-dialog {
+  position: absolute;
+  left: 0; right: 0;
+  background: @DialogBackgroundColor;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: @Dialog-Color;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 1px solid @Dialog-Border-Color;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-top: 1px solid @Dialog-Border-Color;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 20em;
+  color: inherit;
+  font-family: monospace;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+}
+
+.CodeMirror-foldmarker {
+  color: @FoldmarkerColor;
+  text-shadow: @FoldmarkerShadowColor 1px 1px 2px, @FoldmarkerShadowColor -1px -1px 2px, @FoldmarkerShadowColor 1px -1px 2px, @FoldmarkerShadowColor -1px 1px 2px;
+  font-family: arial;
+  line-height: .3;
+  cursor: pointer;
+}
+
+.CodeMirror-foldgutter {
+  width: .7em;
+}
+
+.CodeMirror-foldgutter-open,
+.CodeMirror-foldgutter-folded {
+  cursor: pointer;
+}
+
+.CodeMirror-foldgutter-open:after {
+  content: "\25BE";
+}
+
+.CodeMirror-foldgutter-folded:after {
+  content: "\25B8";
+}
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  border: 1px solid @HintsBorderColor;
+
+  background: @HintsBackgroundColor;
+  font-size: 90%;
+  font-family: monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  max-width: 19em;
+  overflow: hidden;
+  white-space: pre;
+  color: black;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: @HintActiveBackground;
+  color: @HintActiveColor;
+}
+
+/* The lint marker gutter */
+.CodeMirror-lint-markers {
+  width: 16px;
+}
+
+.CodeMirror-lint-tooltip {
+  background-color: infobackground;
+  border: 1px solid black;
+  border-radius: 4px 4px 4px 4px;
+  color: infotext;
+  font-family: monospace;
+  font-size: 10pt;
+  overflow: hidden;
+  padding: 2px 5px;
+  position: fixed;
+  white-space: pre;
+  white-space: pre-wrap;
+  z-index: 100;
+  max-width: 600px;
+  opacity: 0;
+  transition: opacity .4s;
+  -moz-transition: opacity .4s;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  -ms-transition: opacity .4s;
+}
+
+.CodeMirror-lint-mark-error, .CodeMirror-lint-mark-warning {
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+
+.CodeMirror-lint-mark-error {
+  background-image:
+  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg==")
+  ;
+}
+
+.CodeMirror-lint-mark-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJFhQXEbhTg7YAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAMklEQVQI12NkgIIvJ3QXMjAwdDN+OaEbysDA4MPAwNDNwMCwiOHLCd1zX07o6kBVGQEAKBANtobskNMAAAAASUVORK5CYII=");
+}
+
+.CodeMirror-lint-marker-error, .CodeMirror-lint-marker-warning {
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.CodeMirror-lint-message-error, .CodeMirror-lint-message-warning {
+  padding-left: 18px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII=");
+}
+
+.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII=");
+}
+
+.CodeMirror-lint-marker-multiple {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%; height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.CodeMirror {
+  margin: 0;
+  padding: 0;
+}
+
+.CodeMirror-scroll {
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+#editor {
+  position: absolute;
+  top: 0px;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.info {
+  position: absolute;
+  display: inline;
+  bottom: 0px;
+  font-family: monospace;
+  white-space: nowrap;
+  bottom: 0;
+  background: @StatusLineBackground;
+  padding: 0px;
+  height: 25px;
+  left: 0;
+  width: 100%;
+}
+
+.statuslineitem {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 3px;
+    padding-left: 0px;
+    border: 0px;
+    float: left;
+}
+
+.arrow-right-editMode {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+
+	border-left: 13px solid @StatusLineEditMode;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.arrow-right-title {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+
+	border-left: 13px solid @StatusLineTitle;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.arrow-right-mode {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+
+	border-left: 13px solid @StatusLineMode;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.arrow-right-linenum {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+
+	border-left: 13px solid @StatusLineLineNum;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.arrow-right-colnum {
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 13px solid transparent;
+
+	border-left: 13px solid @StatusLineColNum;
+	margin: 0px;
+	padding: 0px;
+}
+
+#editMode {
+    background: @StatusLineEditMode;
+    padding-left: 5px;
+}
+
+#title {
+    background: @StatusLineTitle;
+    padding-left: 5px;
+}
+
+#mode {
+    background: @StatusLineMode;
+    padding-left: 5px;
+}
+
+#linenum {
+    background: @StatusLineLineNum;
+    padding-left: 5px;
+}
+
+#colnum {
+    background: @StatusLineColNum;
+    padding-left: 5px;
+}
+
+#editMode {
+    background: @StatusLineEditMode;
+    padding-left: 5px;
+}
+
+.title {
+    background: @StatusLineTitle;
+}
+
+.mode {
+    background: @StatusLineMode;
+}
+
+.linenum {
+    background: @StatusLineLineNum;
+}
+
+.colnum {
+    background: @StatusLineColNum;
+}

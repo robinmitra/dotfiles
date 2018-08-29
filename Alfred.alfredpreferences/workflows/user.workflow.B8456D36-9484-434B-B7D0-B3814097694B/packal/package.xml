@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Open in Finder Tab</name>
+  <version>1.0</version>
+  <bundle>com.mix1009.alfred.openinfindertab</bundle>
+  <updated>1406878927</updated>
+  <file>open_in_finder_tab.alfredworkflow</file>
+</workflow>

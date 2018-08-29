@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>uuid-helper</name>
+  <version>0.1</version>
+  <bundle>com.erikbylund.uuid_helper</bundle>
+  <updated>1507780209</updated>
+  <file>uuidhelper.alfredworkflow</file>
+</workflow>

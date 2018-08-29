@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.customct.ScratchPad</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>759DE6D1-8A50-4D55-A943-7A9DA70BFCFF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7323FEEA-2C2A-4B3D-BCDC-CCB17DE8E1C1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8B456DE-B004-4758-8E80-ABE6A8FE5B57</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>and Paste in to Application</string>
+			</dict>
+		</array>
+		<key>E6E68D93-7CC3-4C87-A2A5-EF71406AAB3E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>759DE6D1-8A50-4D55-A943-7A9DA70BFCFF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Guay</string>
+	<key>description</key>
+	<string>Use Alfred for a Scratch Pad</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>ScratchPad</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>sp:</string>
+				<key>runningsubtext</key>
+				<string>Getting Clipboard...</string>
+				<key>script</key>
+				<string>include_once("workflows.php");
+
+//
+// Create the workflow object to use.
+//
+$wf = new Workflows();
+
+//
+// Get the raw query and store it for use.
+//
+$raw = "{query}";
+
+
+if(strcmp("",$raw)===0) {
+	//
+	// Get the clipboard value.
+	//
+	exec("/usr/bin/pbpaste",$clip);
+
+	//
+	// Paste the clipboard to the Alfred command line.
+	//
+	$wf-&gt;result('scrpad', $clip[0], 'Get Clipboard', "", 'icon.png', 'no', $clip[0]);
+} else {
+	//
+	// Return what the user edited.
+	//
+	$wf-&gt;result('scrpad',$raw,"Paste into Clipboard","", 'icon.png', 'yes', $raw);
+}
+
+echo $wf-&gt;toxml();
+</string>
+				<key>title</key>
+				<string>Scratch Pad</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>759DE6D1-8A50-4D55-A943-7A9DA70BFCFF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E6E68D93-7CC3-4C87-A2A5-EF71406AAB3E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>7323FEEA-2C2A-4B3D-BCDC-CCB17DE8E1C1</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A8B456DE-B004-4758-8E80-ABE6A8FE5B57</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>After you set a hotkey, you can select text and edit it on the Alfred command line. When you press enter, it will be placed into the clipboard. If you press &lt;cmd&gt; and enter, it will place it into the clipboard and the top most application.
+
+If you invoke the keyword “sp:” or if you press the hotkey without a selection, it will offer to put the clipboard as the text to edit. Press enter on the “clipboard” option and the contents of the clipboard will be copied to the Alfred command line for editing.</string>
+	<key>uidata</key>
+	<dict>
+		<key>7323FEEA-2C2A-4B3D-BCDC-CCB17DE8E1C1</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>759DE6D1-8A50-4D55-A943-7A9DA70BFCFF</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>A8B456DE-B004-4758-8E80-ABE6A8FE5B57</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>E6E68D93-7CC3-4C87-A2A5-EF71406AAB3E</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://www.customct.com/shop/alfred-2-workflows/</string>
+</dict>
+</plist>

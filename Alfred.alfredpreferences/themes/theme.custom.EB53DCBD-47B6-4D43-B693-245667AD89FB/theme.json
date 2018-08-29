@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 4,
+      "subtext" : {
+        "size" : 14,
+        "colorSelected" : "#BABABAFF",
+        "font" : "Helvetica Neue",
+        "color" : "#A9A9A9FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#7F7F7FFF",
+        "font" : "Helvetica Neue",
+        "color" : "#4C4C4CFF"
+      },
+      "backgroundSelected" : "#FEFFFF33",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Helvetica Neue",
+        "color" : "#FFFFFFFF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 4,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#00000000",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "Helvetica Neue Light",
+        "color" : "#FFFFFFFF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#0000007F",
+      "paddingHorizontal" : 0,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#00000000",
+      "blur" : 39,
+      "roundness" : 3,
+      "paddingVertical" : 10
+    },
+    "credit" : "Robin Mitra",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#262626FF",
+      "thickness" : 2
+    },
+    "name" : "Glass"
+  }
+}

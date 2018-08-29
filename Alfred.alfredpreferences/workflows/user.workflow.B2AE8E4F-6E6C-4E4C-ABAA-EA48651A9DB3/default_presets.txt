@@ -1,0 +1,2 @@
+(.*)\.(.*)@$1 - ###[1].$2|+f|Append Number Sequence(.*)\.(.*)@$1 ($y$m$d$h$n$s).$2|+f|Append Current Timestamp(.*)\.(.*)@###[1] - $1.$2|+f|Prefix with Number Sequence(.*)\.(.*)@$y$m$d$h$n$s - $1.$2|+f|Prefix with Current Timestamp\s@@_{-d}|+f|For the Web\s@@_{-d-l}|+f|For the Web + lowercase
+(.{10})(.*)\.(.*)@$1.$3{-s}|+f|Short Name + No Space\s@@|+f|Remove Space@@-d|+f|Remove Diacriticals[/\:*?"<>|]@@_|+f|Windows Compatible(.*)@$1{-c}|+f|Capitalize Name(.*)@$1{-t}|+f|Title name(.*)@$1{-l}|+f|lowercase(.*)@$1{-u}|+f|UPPERCASE

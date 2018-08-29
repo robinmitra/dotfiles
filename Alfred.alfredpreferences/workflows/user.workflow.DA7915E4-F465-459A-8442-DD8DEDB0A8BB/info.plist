@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.customct.AlfredBrowser</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>00C6D3D5-904B-4221-920A-0335E5887C8C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0CEE38FA-DAC8-44B4-9DCA-A49EF07E7746</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>0AE81FE3-8F54-49C7-AA35-03AFDE43E963</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>566B3BBF-7E27-43C7-BC18-828C7B47D709</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>0CEE38FA-DAC8-44B4-9DCA-A49EF07E7746</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>22393702-37E2-4EEB-A349-C31F4F9D2EDB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>1B302AE0-855D-49C6-8601-4E8DC70CCA0F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8C1ABD6A-5D78-4747-817B-161AF0C0E9C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>22393702-37E2-4EEB-A349-C31F4F9D2EDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>37A023CA-6CBC-4141-9F57-2D6B520A82DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>4BEF8A2E-ADD0-4DFC-BA7D-9A7A0DBA1188</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>664E20CC-97CD-41CD-BF42-4892FDCF9DB5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>5B52B417-6FEF-4C02-B066-75EC31A07BFB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8E06285-BE88-4277-8B12-FBD8C3B92BAF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>664E20CC-97CD-41CD-BF42-4892FDCF9DB5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>37A023CA-6CBC-4141-9F57-2D6B520A82DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>69D1BA16-654D-4BBD-A4BE-1CFE7656A2B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A08A8AE4-7FAB-40FA-9D53-61E0EEE4C8CD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>6FB42F33-DDE7-453F-B93F-E3FD6F94D7F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1494C1FA-D313-42C3-A899-649D1FFCE827</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>796F776F-C466-4E0E-AC0D-C92981EF72C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F5FBCF0F-C84B-47B5-AC1D-CD1B01578F39</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>79C1D72F-45FF-475F-892D-89E30AFC71F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B52B417-6FEF-4C02-B066-75EC31A07BFB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>7D7CE45E-E11D-4BC8-8711-7C7B1804DF28</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F36E98B2-2102-4790-9D7B-97E29B9183E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E7551936-509B-445C-9DA6-E9D81C6B580E</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Finder</string>
+			</dict>
+		</array>
+		<key>8C1ABD6A-5D78-4747-817B-161AF0C0E9C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A08A8AE4-7FAB-40FA-9D53-61E0EEE4C8CD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D9746DD8-52EC-4DF6-98EC-68BA848279C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B52B417-6FEF-4C02-B066-75EC31A07BFB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F2326A73-3937-4A21-A41F-2DB05D3F19B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69D1BA16-654D-4BBD-A4BE-1CFE7656A2B7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Guay</string>
+	<key>description</key>
+	<string>A collection of tools for the Alfred Browser</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Alfred Browser Toolbox</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>ff</string>
+				<key>scopes</key>
+				<array/>
+				<key>subtext</key>
+				<string>Loading Folders....</string>
+				<key>title</key>
+				<string>Find Folder in Alfred</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>7D7CE45E-E11D-4BC8-8711-7C7B1804DF28</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>F36E98B2-2102-4790-9D7B-97E29B9183E0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>E7551936-509B-445C-9DA6-E9D81C6B580E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>name</key>
+				<string>Create a Folder</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>0AE81FE3-8F54-49C7-AA35-03AFDE43E963</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+if [ ! -d "$(getDataDir)" ]; then
+   mkdir -p "$(getDataDir)";
+   touch "$(getDataDir)/name.txt";
+fi
+
+name="{query}";
+
+echo "$name" &gt; "$(getDataDir)/name.txt";
+
+/usr/bin/osascript -e 'tell application "Alfred 2" to run trigger "mkDir" in workflow "com.customct.AlfredBrowser"';
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>566B3BBF-7E27-43C7-BC18-828C7B47D709</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+if [ ! -d "$(getDataDir)" ]; then
+   mkdir -p "$(getDataDir)";
+   touch "$(getDataDir)/name.txt";
+fi
+
+name="{query}";
+
+echo "$name" &gt; "$(getDataDir)/name.txt";
+
+/usr/bin/osascript -e 'tell application "Alfred 2" to run trigger "mkFile" in workflow "com.customct.AlfredBrowser"';
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1494C1FA-D313-42C3-A899-649D1FFCE827</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>name</key>
+				<string>Create a File</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>6FB42F33-DDE7-453F-B93F-E3FD6F94D7F9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+name="{query}";
+
+dir=`cat "$(getDataDir)/name.txt"`;
+
+if [ -d "$dir/$name" ]; then
+	echo "Directory already exists.";
+else
+	mkdir "$dir/$name";
+	echo "'$name' directory created.";
+fi
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>22393702-37E2-4EEB-A349-C31F4F9D2EDB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Alfred Browser Toolbox</string>
+				<key>text</key>
+				<string>Give the Directory Name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0CEE38FA-DAC8-44B4-9DCA-A49EF07E7746</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>mkDir</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>00C6D3D5-904B-4221-920A-0335E5887C8C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Alfred Browser Toolbox</string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Alfred Browser Toolbox</string>
+				<key>text</key>
+				<string>Give the File Name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>664E20CC-97CD-41CD-BF42-4892FDCF9DB5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>
+#########################
+# Contants.
+#########################
+VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
+NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"
+
+###############################################################################
+# Read the bundleid from the workflow's info.plist
+###############################################################################
+getBundleId() {
+  /usr/libexec/PlistBuddy  -c "Print :bundleid" "info.plist"
+}
+
+###############################################################################
+# Get the workflow data dir
+###############################################################################
+getDataDir() {
+  local BUNDLEID=$(getBundleId)
+  echo "${NVPREFS}${BUNDLEID}"
+}
+
+name="{query}";
+
+dir=`cat "$(getDataDir)/name.txt"`;
+
+touch "$dir/$name";
+
+echo -n "'$name' file created.";
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>37A023CA-6CBC-4141-9F57-2D6B520A82DF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>mkFile</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>4BEF8A2E-ADD0-4DFC-BA7D-9A7A0DBA1188</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A08A8AE4-7FAB-40FA-9D53-61E0EEE4C8CD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Get File Name</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>F2326A73-3937-4A21-A41F-2DB05D3F19B7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>echo -n $(basename "{query}");
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>69D1BA16-654D-4BBD-A4BE-1CFE7656A2B7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Get File Size</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>1B302AE0-855D-49C6-8601-4E8DC70CCA0F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>size=`du -h "{query}" | awk '{print $1;}'`;
+echo -n $size;
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8C1ABD6A-5D78-4747-817B-161AF0C0E9C0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>ab:open</string>
+				<key>subtext</key>
+				<string>Alfred Browser Toolbox</string>
+				<key>text</key>
+				<string>Opens the Current Directory in Alfred</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D9746DD8-52EC-4DF6-98EC-68BA848279C9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>tell application "Alfred 2" to run trigger "OpenDir" in workflow "com.customct.AlfredBrowser" with argument "{query}"</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>F8E06285-BE88-4277-8B12-FBD8C3B92BAF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)if application "Path Finder" is frontmost then	tell application "Path Finder"		set pathfinderselection to selection		if pathfinderselection is missing value then			display dialog "Nothing selected" buttons {"Oh, crud..."} default button 1			return		end if		set pathfinderpaths to ""		repeat with i from 1 to count of pathfinderselection			set pfItem to item i of pathfinderselection			-- Corrects for error when hidden files are showing			try				set currentpathfinderpath to (POSIX path of pfItem)				set pathfinderpaths to pathfinderpaths &amp; space ¬					&amp; quoted form of currentpathfinderpath			end try		end repeat
+		return currentpathfinderpath
+	end tell
+else if application "Finder" is frontmost then	tell application "Finder"		try			set filep to selection as alias list			set finderSelection to POSIX path of filep		on error			display dialog "Nothing selected" buttons ¬			{"Curses, foiled again!..."} default button 1			return		end try	end tell
+	return finderSelection
+end ifend alfred_script
+</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>5B52B417-6FEF-4C02-B066-75EC31A07BFB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>79C1D72F-45FF-475F-892D-89E30AFC71F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>OpenDir</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>796F776F-C466-4E0E-AC0D-C92981EF72C6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>F5FBCF0F-C84B-47B5-AC1D-CD1B01578F39</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow is created by Richard Guay. Visit http://customct.com/alfred-2-workflows for even more fun!
+
+The only keyword is "ff" for "Find a Folder". It is a way to lookup a folding in the Alfred browser or in Finder. Very handy.
+
+There are two Alfred browser actions:
+
+Create a File
+
+Simply creates a file in the directory this file action is ran on. It will ask you for the name and then create it.
+
+Create a Directory
+
+Same as "Create a File", but creates a directory instead.</string>
+	<key>uidata</key>
+	<dict>
+		<key>00C6D3D5-904B-4221-920A-0335E5887C8C</key>
+		<dict>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>0AE81FE3-8F54-49C7-AA35-03AFDE43E963</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>0CEE38FA-DAC8-44B4-9DCA-A49EF07E7746</key>
+		<dict>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>1494C1FA-D313-42C3-A899-649D1FFCE827</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
+		<key>1B302AE0-855D-49C6-8601-4E8DC70CCA0F</key>
+		<dict>
+			<key>ypos</key>
+			<real>850</real>
+		</dict>
+		<key>22393702-37E2-4EEB-A349-C31F4F9D2EDB</key>
+		<dict>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
+		<key>37A023CA-6CBC-4141-9F57-2D6B520A82DF</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
+		<key>4BEF8A2E-ADD0-4DFC-BA7D-9A7A0DBA1188</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
+		<key>566B3BBF-7E27-43C7-BC18-828C7B47D709</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>5B52B417-6FEF-4C02-B066-75EC31A07BFB</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
+		<key>664E20CC-97CD-41CD-BF42-4892FDCF9DB5</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
+		<key>66FF81C9-3909-4A00-AF3F-7B59E2D35CB9</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
+		<key>69D1BA16-654D-4BBD-A4BE-1CFE7656A2B7</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
+		<key>6FB42F33-DDE7-453F-B93F-E3FD6F94D7F9</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
+		<key>796F776F-C466-4E0E-AC0D-C92981EF72C6</key>
+		<dict>
+			<key>ypos</key>
+			<real>1180</real>
+		</dict>
+		<key>79C1D72F-45FF-475F-892D-89E30AFC71F6</key>
+		<dict>
+			<key>ypos</key>
+			<real>1060</real>
+		</dict>
+		<key>7D7CE45E-E11D-4BC8-8711-7C7B1804DF28</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>8C1ABD6A-5D78-4747-817B-161AF0C0E9C0</key>
+		<dict>
+			<key>ypos</key>
+			<real>850</real>
+		</dict>
+		<key>A08A8AE4-7FAB-40FA-9D53-61E0EEE4C8CD</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
+		<key>D9746DD8-52EC-4DF6-98EC-68BA848279C9</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
+		<key>E7551936-509B-445C-9DA6-E9D81C6B580E</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>F2326A73-3937-4A21-A41F-2DB05D3F19B7</key>
+		<dict>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
+		<key>F36E98B2-2102-4790-9D7B-97E29B9183E0</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F5FBCF0F-C84B-47B5-AC1D-CD1B01578F39</key>
+		<dict>
+			<key>ypos</key>
+			<real>1180</real>
+		</dict>
+		<key>F8E06285-BE88-4277-8B12-FBD8C3B92BAF</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://customct.com/alfred-2-workflows</string>
+</dict>
+</plist>

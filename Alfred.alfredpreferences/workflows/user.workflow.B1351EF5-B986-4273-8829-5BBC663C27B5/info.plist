@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>info.oddgeek.bard</string>
+	<key>category</key>
+	<string>Entertainment</string>
+	<key>connections</key>
+	<dict>
+		<key>FA1BD909-6AA6-442D-AE8B-FE8410132A3F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2A95F40A-BB9A-41E2-947B-8978C4BD04AD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E7798EC-EE9A-4B16-9A9E-3A2578BA53B8</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Copy this insult to your clipboard.</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>23985D7B-BC08-4A40-AE00-16F9E14DEFF6</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Display this insult in Large Type</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E30CBD32-8D13-4C83-BFBC-66A4D5482E20</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Display as a notification.</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jason A. Dour</string>
+	<key>description</key>
+	<string>Generate random Bard-inspired insults.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Shakespearean Insult Generator</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>2A95F40A-BB9A-41E2-947B-8978C4BD04AD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>6E7798EC-EE9A-4B16-9A9E-3A2578BA53B8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>bard</string>
+				<key>runningsubtext</key>
+				<string>...</string>
+				<key>script</key>
+				<string>set colA to {"artless", "bawdy", "beslubbering", "bootless", "churlish", "cockered", ¬	"clouted", "craven", "currish", "dankish", "dissembling", "droning", ¬	"errant", "fawning", "fobbing", "froward", "frothy", "gleeking", ¬	"goatish", "gorbellied", "impertinent", "infectious", "jarring", ¬	"loggerheaded", "lumpish", "mammering", "mangled", "mewling", ¬	"paunchy", "pribbling", "puking", "puny", "qualling", "rank", ¬	"reeky", "roguish", "ruttish", "saucy", "spleeny", "spongy", ¬	"surly", "tottering", "unmuzzled", "vain", "venomed", "villainous", ¬	"warped", "wayward", "weedy", "yeasty", "cullionly", "fusty", ¬	"caluminous", "wimpled", "burly-boned", "misbegotten", "odiferous", ¬	"poisonous", "fishified", "Wart-necked"}set colB to {"base-court", "bat-fowling", "beef-witted", "beetle-headed", "boil-brained", ¬	"clapper-clawed", "clay-brained", "common-kissing", "crook-pated", "dismal-dreaming", ¬	"dizzy-eyed", "doghearted", "dread-bolted", "earth-vexing", "elf-skinned", ¬	"fat-kidneyed", "fen-sucked", "flap-mouthed", "fly-bitten", "folly-fallen", ¬	"fool-born", "full-gorged", "guts-griping", "half-faced", "hasty-witted", ¬	"hedge-born", "hell-hated", "idle-headed", "ill-breeding", "ill-nurtured", ¬	"knotty-pated", "milk-livered", "motley-minded", "onion-eyed", "plume-plucked", ¬	"pottle-deep", "pox-marked", "reeling-ripe", "rough-hewn", "rude-growing", ¬	"rump-fed", "shard-borne", "sheep-biting", "spur-galled", "swag-bellied", ¬	"tardy-gaited", "tickle-brained", "toad-spotted", "unchin-snouted", "weather-bitten", ¬	"whoreson", "malmsey-nosed", "rampallian", "lily-livered", "scurvy-valiant", ¬	"brazen-faced", "unwash'd", "bunch-back'd", "leaden-footed", "muddy-mettled", ¬	"pigeon-liver'd", "scale-sided"}set colC to {"apple-john", "baggage", "barnacle", "bladder", "boar-pig", "bugbear", ¬	"bum-bailey", "canker-blossom", "clack-dish", "clotpole", "coxcomb", ¬	"codpiece", "death-token", "dewberry", "flap-dragon", "flax-wench", ¬	"flirt-gill", "foot-licker", "fustilarian", "giglet", "gudgeon", ¬	"haggard", "harpy", "hedge-pig", "horn-beast", "hugger-mugger", ¬	"joithead", "lewdster", "lout", "maggot-pie", "malt-worm", "mammet", ¬	"measle", "minnow", "miscreant", "moldwarp", "mumble-news", "nut-hook", ¬	"pigeon-egg", "pignut", "puttock", "pumpion", "ratsbane", "scut", ¬	"skainsmate", "strumpet", "varlot", "vassal", "whey-face", "wagtail", ¬	"knave", "blind-worm", "popinjay", "scullian", "jolt-head", "malcontent", ¬	"devil-monk", "toad", "rascal", "Basket-Cockle"}set rndA to (random number from 1 to count of colA)set rndB to (random number from 1 to count of colB)set rndC to (random number from 1 to count of colC)set reply to "Thou " &amp; item rndA of colA &amp; " " &amp; item rndB of colB &amp; " " &amp; item rndC of colC &amp; "!"
+
+return "&lt;?xml version=\"1.0\"?&gt;
+&lt;items&gt;
+&lt;item uid=\"insult\" arg=\"" &amp; reply &amp; "\"&gt;
+&lt;title&gt;" &amp; reply &amp; "&lt;/title&gt;
+&lt;subtitle&gt;Copy this insult to your clipboard and paste it into the front most application.&lt;/subtitle&gt;
+&lt;/item&gt;
+&lt;/items&gt;"
+</string>
+				<key>subtext</key>
+				<string>Place a random Bard-inspired insult in the clipboard.</string>
+				<key>title</key>
+				<string>Shakespearean Insult Generator</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FA1BD909-6AA6-442D-AE8B-FE8410132A3F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>23985D7B-BC08-4A40-AE00-16F9E14DEFF6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Shakespearean Insult Generator</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E30CBD32-8D13-4C83-BFBC-66A4D5482E20</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>The “Shakespearean Insult Generator” meme has been floating around the net for as long as the net has existed.
+
+I worked up this workflow to let you harness the wit of the Bard to insult your friends.
+
+
+Version History
+
+1.0 - Initial release.</string>
+	<key>uidata</key>
+	<dict>
+		<key>23985D7B-BC08-4A40-AE00-16F9E14DEFF6</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>2A95F40A-BB9A-41E2-947B-8978C4BD04AD</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>6E7798EC-EE9A-4B16-9A9E-3A2578BA53B8</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>E30CBD32-8D13-4C83-BFBC-66A4D5482E20</key>
+		<dict>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
+		<key>FA1BD909-6AA6-442D-AE8B-FE8410132A3F</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://oddgeek.info/</string>
+</dict>
+</plist>

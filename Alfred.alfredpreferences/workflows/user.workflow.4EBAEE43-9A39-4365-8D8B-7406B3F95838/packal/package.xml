@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>IMDb Search</name>
+  <version>1.4.5</version>
+  <bundle>com.targumanu.imdbsearch</bundle>
+  <updated>1408020973</updated>
+  <file>imdb_search.alfredworkflow</file>
+</workflow>

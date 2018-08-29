@@ -1,0 +1,14 @@
+{
+    "description": "A very small code editor for Alfred.",
+    "main": "main.html",
+    "name": "Alfred Editor",
+    "version": "0.1.11",
+    "window": {
+        "height": 600,
+        "show": false,
+        "title": "My Editor",
+        "toolbar": false,
+        "width": 500,
+        "icon": "icon.png"
+    }
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>io.mcmanus.supataggla</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>A69F3318-3575-4EE1-B718-9888BCE3B047</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CEB4DA7-A01D-4F69-8A37-32F2AAC4A90C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D8D8CBA7-16C5-40B7-AD1E-230710852F2A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9CEB4DA7-A01D-4F69-8A37-32F2AAC4A90C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Matt McManus</string>
+	<key>description</key>
+	<string>Toggle apps with global hotkeys</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>SupaTaggla</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>iTerm</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D8D8CBA7-16C5-40B7-AD1E-230710852F2A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>on run(arguments)
+  set appName to "{query}"
+  set startIt to false
+  tell application "System Events"
+	if not (exists process appName) then
+		set startIt to true
+	else if frontmost of process appName then
+		set visible of process appName to false
+	else
+		set frontmost of process appName to true
+	end if
+  end tell
+  if startIt then
+  	tell application appName to activate
+  end if
+end run</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9CEB4DA7-A01D-4F69-8A37-32F2AAC4A90C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>Chrome</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A69F3318-3575-4EE1-B718-9888BCE3B047</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Thanks for the script! http://brettterpstra.com/2011/01/22/quick-tip-applescript-application-toggle/</string>
+	<key>uidata</key>
+	<dict>
+		<key>9CEB4DA7-A01D-4F69-8A37-32F2AAC4A90C</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>A69F3318-3575-4EE1-B718-9888BCE3B047</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>D8D8CBA7-16C5-40B7-AD1E-230710852F2A</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>mcmanus.io</string>
+</dict>
+</plist>

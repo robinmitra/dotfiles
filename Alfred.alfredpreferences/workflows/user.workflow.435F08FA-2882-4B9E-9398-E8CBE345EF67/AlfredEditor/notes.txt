@@ -1,0 +1,13 @@
+Here I have some design notes to help me remember things I did to get other things to work. Sometimes it is very necessary to keep a list of these.
+
+1) Change Codemirror's Codemirror.css file
+
+The height of the editor is hard coded, which is okay for website, but not good for an editor. Therefore, that line needs to be commented out. As the following:
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  /* height: 300px; */
+}
+
+2) In vim.js, change the default keymap to sublime when in insert mode.
