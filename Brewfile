@@ -67,6 +67,7 @@ cask "alfred"
 cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
+cask "betterzip"            # Quicklook generator for zip files.
 cask "boom-3d"              # You know, for sound!
 cask "caskroom/fonts/font-consolas-for-powerline"
 cask "caskroom/fonts/font-fira-code"                      # Coolest font ever.
@@ -100,11 +101,15 @@ cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
 cask "now" 
+cask "qlimagesize"          # Quicklook generator for showing image size and dimension.
 cask "qlmarkdown"           # Quicklook generator for markdown files.
 cask "qlprettypatch"        # Quicklook generator for patch files.
 cask "qlstephen"            # Quicklook generator for text files without extensions.
+cask "qlvideo"              # Quicklook generator for video files.
 cask "quicklook-csv"        # Quicklook generator for CSV files.
 cask "quicklook-json"       # Quicklook generator for JSON files.
+cask "quicklook-pat"        # Quicklook generator for Adobe Pattern files.
+cask "quicklookase"         # Quicklook generator for Adobe Swatch Exchange files.
 cask "paw"
 cask "rescuetime"           # So I can track my distractions!
 cask "sequel-pro"
@@ -115,6 +120,7 @@ cask "spotify"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vivaldi"
+cask "webpquicklook"        # Quicklook generator for WebP files.
 cask "whatsapp"
 
 #############
