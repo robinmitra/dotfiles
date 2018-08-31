@@ -43,6 +43,7 @@ brew "pv"                   # Monitor progress through a pipe.
 brew "pyenv"                # Python version manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
+brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "st"                   # Simple statistics tool.
 brew "terminal-notifier"
