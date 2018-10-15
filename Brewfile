@@ -32,6 +32,7 @@ brew "highlight"            # Syntax highlighting.
 brew "htop"                 # Better 'top'.
 brew "httpie"               # Better 'curl'.
 brew "jq"                   # JSON processor.
+brew "json-table"           # Print JSON as a table JSON.
 brew "macvim", link: false
 brew "mas"                  # CLI for Mac App Store.
 brew "ncdu"                 # Disk space analyser.
