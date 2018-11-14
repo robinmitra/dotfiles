@@ -5,6 +5,7 @@
 tap "caskroom/fonts"                  # For fonts (e.g. Fira Code)
 tap "caskroom/versions"
 tap "caskroom/cask"                   # For installing Casks.
+tap "domt4/autoupdate"                # Auto-update for Homebrew!
 tap "goles/battery"                   # For battery.
 tap "homebrew/core"
 tap "homebrew/bundle"                 # Makes it possible to use this file!
@@ -18,6 +19,7 @@ tap "universal-ctags/universal-ctags" # CTags for Vim
 brew "openssl"
 brew "awscli"
 brew "cfssl"                # Cloudflare's PKI toolkit.
+brew "cowsay"               # Just because, why not?
 brew "diff-so-fancy"        # Fancier diff.
 brew "fd"                   # Yet another alternative to 'find'.
 brew "firebase-cli"
@@ -27,6 +29,7 @@ brew "terraform_landscape"            # Better formatting for terraform diffs.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "gnupg"
+brew "grc"                  # Generic colouriser (e.g. ping).
 brew "hub"                  # Github helper.
 brew "highlight"            # Syntax highlighting.
 brew "htop"                 # Better 'top'.
@@ -38,6 +41,7 @@ brew "mas"                  # CLI for Mac App Store.
 brew "ncdu"                 # Disk space analyser.
 brew "neovim"
 brew "nmap"                 # Port scanning.
+brew "nnn"                  # Noice is Not Noice, a nicer fork...
 brew "nvm"                  # Node.js version manager.
 brew "pre-commit"           # Pre-commit hooks.
 brew "pv"                   # Monitor progress through a pipe.
@@ -68,6 +72,8 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "alfred"
 cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
+cask "appium"               # Mobile app automation.
+cask "aws-value"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
 cask "boom-3d"              # You know, for sound!
@@ -86,6 +92,10 @@ cask "dash"                 # Documentation on steroids.
 cask "dropbox"
 cask "evernote"
 cask "fantastical"          # The ultimate calendar.
+cask "font-source-code-pro"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-slab"
 cask "free-ruler"           # Old but pretty solid visual ruler.
 cask "gas-mask"             # Hosts file manager.
 cask "genymotion"
@@ -103,6 +113,7 @@ cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
 cask "now" 
+cask "qlcolorcode"          # Quicklook generator for syntax highlighting for code.
 cask "qlimagesize"          # Quicklook generator for showing image size and dimension.
 cask "qlmarkdown"           # Quicklook generator for markdown files.
 cask "qlprettypatch"        # Quicklook generator for patch files.
@@ -115,6 +126,7 @@ cask "quicklookase"         # Quicklook generator for Adobe Swatch Exchange file
 cask "paw"
 cask "rescuetime"           # So I can track my distractions!
 cask "sequel-pro"
+cask "sketch"
 cask "skitch"               # Better screenshot-ting.
 cask "slack"
 cask "spectacle"            # Window organiser I can't live without!
@@ -135,6 +147,7 @@ mas "Byword", id: 420212497
 mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
 mas "Noizio", id: 928871589                 # Background noise simulator.
 mas "Pixave", id: 924891282
+mas "Pocket", id: 568494494
 mas "SnippetsLab", id: 1006087419
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
