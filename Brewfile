@@ -52,7 +52,7 @@ brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "st"                   # Simple statistics tool.
 brew "terminal-notifier"
-brew "terraform"
+brew "tfenv"                # Terraform version manager.
 brew "the_silver_searcher"  # Yet another alternative to 'grep'.
 brew "thefuck"              # Correct the f*cked up commands! 
 brew "trash" 
@@ -73,7 +73,7 @@ cask "alfred"
 cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "appium"               # Mobile app automation.
-cask "aws-value"            # Credentials management for AWS.
+cask "aws-vault"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
 cask "boom-3d"              # You know, for sound!
