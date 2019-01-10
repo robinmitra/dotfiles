@@ -29,6 +29,7 @@ brew "terraform_landscape"            # Better formatting for terraform diffs.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "gnupg"
+brew "graphviz"             # For UML diagram generation using PlantUML.
 brew "grc"                  # Generic colouriser (e.g. ping).
 brew "hub"                  # Github helper.
 brew "highlight"            # Syntax highlighting.
