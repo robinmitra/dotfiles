@@ -29,5 +29,9 @@
   rhh = reset --hard HEAD
   s = status -sb
   stashes = stash list
+  tags = !"git for-each-ref \
+    --sort=taggerdate \
+    --format '%(tag)_,,,_%(taggerdate:raw)_,,,_%(taggername)_,,,_%(subject)' refs/tags \
+    | gawk 'BEGIN { FS = \"_,,,_\"  } ; { t=strftime(\"%Y-%m-%d  %H:%M\",$2); printf \"%-20s %-18s %-25s %s\\n\", t, $1, $4, $3  }'"
   unstage = reset HEAD --
   unstash = stash pop

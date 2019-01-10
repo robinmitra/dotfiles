@@ -8,8 +8,8 @@
 # Variables #
 #############
 
-WORK="~/Code/work"
-PLAY="~/Code/play"
+export WORK=~/Code/work
+export PLAY=~/Code/play
 
 ###########
 # General #
@@ -36,6 +36,12 @@ alias zc="vim ~/.zshrc"
 alias zp="vim ~/.zpreztorc"
 alias za="vim ~/.aliases.sh"
 
+############
+# Homebrew #
+############
+
+alias brewfile="$EDITOR ~/Brewfile"
+
 #############
 # Locations #
 #############
@@ -51,6 +57,7 @@ alias gpo="gp origin"
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset %C(dim white)▹%Creset %C(green)%cr%Creset %C(dim green)%cd%Creset %C(dim white)▹%Creset %C(magenta)%an %C(dim magenta)<%ae>%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset %C(dim cyan)%GS%GK%Creset %C(auto)%+D%Creset %n%s%n' --date=format:'%a %d %b %y, %H:%m'"
 alias glogc="git log --color --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %C(dim white)▹%Creset %s %C(dim white)▹%Creset %Cgreen%cr%Creset %C(dim white)▹%Creset %C(magenta)%an%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset'"
 alias gla="git config -l | grep alias | cut -c 7-"
+alias gtag="git log --tags --color --graph --simplify-by-decoration --pretty=format:'%C(green)%cr%Creset %C(dim green)%cd%Creset %C(auto)%D%Creset' --date=format:'%a %d %b %y, %H:%m'"
 
 ##############
 # Kubernetes #
@@ -62,10 +69,12 @@ alias kpods="kubectl get pods -o custom-columns=NAME:.metadata.name,READY:.statu
 # Suffixes #
 ############
 
-alias -s js=vim
-alias -s java=vim
-alias -s rb=vim
-alias -s xml=vim
-alias -s php=vim
+alias -s go=goland
+alias -s java=idea
+alias -s js=webstorm
 alias -s json=vim
-alias -s go='go run'
+alias -s {md,MD}='highlight -O ansi -l --syntax markdown'
+alias -s php=pstorm
+alias -s py=charm
+alias -s rb=mine
+alias -s xml=vim
