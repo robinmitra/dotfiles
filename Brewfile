@@ -25,7 +25,8 @@ brew "fd"                   # Yet another alternative to 'find'.
 brew "firebase-cli"
 brew "direnv"               # Directory-specific environment variables.
 brew "fzf"                  # Fuzzy search.
-brew "terraform_landscape"            # Better formatting for terraform diffs.
+brew "terraform_landscape"  # Better formatting for terraform diffs.
+brew "gawk"                 # GNU Awk.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "gnupg"
@@ -52,6 +53,7 @@ brew "rename"               # Easier batch renaming.
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "st"                   # Simple statistics tool.
+brew "stress"               # Stress testing for the system system.
 brew "terminal-notifier"
 brew "tfenv"                # Terraform version manager.
 brew "the_silver_searcher"  # Yet another alternative to 'grep'.
@@ -78,6 +80,7 @@ cask "aws-vault"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
 cask "boom-3d"              # You know, for sound!
+cask "caret"                # The ultimate markdown editor.
 cask "caskroom/fonts/font-consolas-for-powerline"
 cask "caskroom/fonts/font-fira-code"                      # Coolest font ever.
 cask "caskroom/fonts/font-fira-mono-for-powerline"
@@ -109,7 +112,6 @@ cask "keybase"
 cask "kitematic"            # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
-cask "macvim"
 cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
@@ -132,7 +134,6 @@ cask "skitch"               # Better screenshot-ting.
 cask "slack"
 cask "spectacle"            # Window organiser I can't live without!
 cask "spotify"
-cask "virtualbox"
 cask "visual-studio-code"
 cask "vivaldi"
 cask "webpquicklook"        # Quicklook generator for WebP files.
@@ -145,6 +146,7 @@ cask "whatsapp"
 mas "Amphetamine", id: 937984704            # Keeps Mac awake!
 mas "Bear", id: 1091189122
 mas "Byword", id: 420212497
+mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
 mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
 mas "Noizio", id: 928871589                 # Background noise simulator.
 mas "Pixave", id: 924891282
