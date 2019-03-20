@@ -127,6 +127,7 @@ cask "quicklook-json"       # Quicklook generator for JSON files.
 cask "quicklook-pat"        # Quicklook generator for Adobe Pattern files.
 cask "quicklookase"         # Quicklook generator for Adobe Swatch Exchange files.
 cask "paw"
+cask "pennywise"            # Always-on-top floating browser.
 cask "rescuetime"           # So I can track my distractions!
 cask "sequel-pro"
 cask "sketch"
@@ -134,6 +135,7 @@ cask "skitch"               # Better screenshot-ting.
 cask "slack"
 cask "spectacle"            # Window organiser I can't live without!
 cask "spotify"
+cask "ubersicht"            # Desktop widgets.
 cask "visual-studio-code"
 cask "vivaldi"
 cask "webpquicklook"        # Quicklook generator for WebP files.
