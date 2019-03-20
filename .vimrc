@@ -2,6 +2,13 @@
 " # Init #
 " ########
 
+" Install Vim Plug if it isn't already installed.
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Specify a directory for plugins.
 call plug#begin('~/.vim/plugged')
 
@@ -119,6 +126,9 @@ set backspace=indent,eol,start
 set wildmenu
 " Set leader as comma since default leader of backshash isn't very convenient.
 let mapleader = ','
+set textwidth=120
+" Make increment/decrement (<C-a>/<C-x>) only work on decimal numebers.
+set nrformats=
 
 " - Undo -
 set undofile
