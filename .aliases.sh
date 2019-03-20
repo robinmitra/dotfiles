@@ -69,6 +69,7 @@ alias kpods="kubectl get pods -o custom-columns=NAME:.metadata.name,READY:.statu
 # Suffixes #
 ############
 
+alias -s csv='column -t -s,'
 alias -s go=goland
 alias -s java=idea
 alias -s js=webstorm
@@ -78,3 +79,4 @@ alias -s php=pstorm
 alias -s py=charm
 alias -s rb=mine
 alias -s xml=vim
+alias -s {yml,yaml}='highlight -O ansi -l --syntax yaml'
