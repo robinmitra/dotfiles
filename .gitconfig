@@ -1,6 +1,7 @@
 [user]
   name = Robin Mitra
   useConfigOnly = true        # Force specifying email for each new repository.
+  email = robinmitra1@gmail.com
 
 [alias]
   # These are set in '~/.git.aliases'.
@@ -26,3 +27,6 @@
 
 [diff]
   colorMoved = zebra          # For differently render moved lines.
+
+[gpg]
+  program = /usr/local/MacGPG2/bin/gpg2  # Explicitly define GPG program in case there are multiple.
