@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 " - Plugins -
 " -----------
 
+Plug 'w0rp/ale'                           " Async linter.
 Plug 'bfontaine/Brewfile.vim'             " Syntax highlighting for Brewfile.
 Plug 'bkad/CamelCaseMotion'               " For taming annoying extremelyLongCamelCasedStrings.
 Plug 'lilydjwg/colorizer'                 " Colourise CSS colours.
@@ -346,6 +347,38 @@ augroup END
 " ############
 " # Plug-ins #
 " ############
+
+" -----------
+" - Ale -
+" -----------
+
+" # Settings #
+
+" Ale
+let g:ale_fixers = {
+\  'javascript': [
+\    'prettier',
+\    'eslint',
+\  ],
+\  'json': [
+\    'prettier'
+\  ],
+\}
+
+let g:ale_sign_error = '✘' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '◆'
+let g:ale_echo_msg_error_str = '✘'
+let g:ale_echo_msg_warning_str = '◆'
+let g:ale_echo_msg_format = '[%linter%] %severity% %s'
+
+
+" Run prettier automatically on file save.
+let g:ale_fix_on_save = 1
+autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=bg gui=bold
+" autocmd VimEnter,Colorscheme * :hi ALEError ctermfg=167 ctermbg=236
+" autocmd VimEnter,Colorscheme * :hi ALEErrorSign ctermfg=red ctermbg=233
+" autocmd VimEnter,Colorscheme * :hi ALEWarning ctermfg=184 ctermbg=236
+" autocmd VimEnter,Colorscheme * :hi ALEWarningSign ctermfg=yellow ctermbg=233
 
 " -----------
 " - Airline -
