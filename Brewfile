@@ -76,6 +76,7 @@ cask "alfred"
 cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "appium"               # Mobile app automation.
+cask "avibrazil-rdm"        # Custom resolutions on Retina display.
 cask "aws-vault"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
