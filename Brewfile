@@ -52,6 +52,8 @@ brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
+brew "speedcrunch"          # Keyboard-centric scientific calculator.
+brew "speedtest-cli"
 brew "st"                   # Simple statistics tool.
 brew "stress"               # Stress testing for the system system.
 brew "terminal-notifier"
@@ -60,6 +62,7 @@ brew "the_silver_searcher"  # Yet another alternative to 'grep'.
 brew "thefuck"              # Correct the f*cked up commands! 
 brew "trash" 
 brew "tree"                 # GNU tree utility.
+brew "typespeed"            # Speed typing command-line game.
 brew "watch"
 brew "watchman"             # File watching service.
 brew "wget"
@@ -73,7 +76,6 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 #########
 
 cask "alfred"
-cask "android-studio"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "appium"               # Mobile app automation.
 cask "avibrazil-rdm"        # Custom resolutions on Retina display.
@@ -96,21 +98,21 @@ cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current a
 cask "dash"                 # Documentation on steroids.
 cask "dropbox"
 cask "evernote"
-cask "fantastical"          # The ultimate calendar.
+# cask "fantastical"        # The ultimate calendar. Installed using `masz due to App Store licencing.
 cask "font-source-code-pro"
 cask "font-roboto"
 cask "font-roboto-mono"
 cask "font-roboto-slab"
 cask "free-ruler"           # Old but pretty solid visual ruler.
 cask "gas-mask"             # Hosts file manager.
-cask "genymotion"
+# cask "genymotion"
 cask "google-chrome"
 cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keybase"
-cask "kitematic"            # Visual Docker container manager.
+# cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
 cask "notion"
@@ -149,11 +151,13 @@ cask "whatsapp"
 mas "Amphetamine", id: 937984704            # Keeps Mac awake!
 mas "Bear", id: 1091189122
 mas "Byword", id: 420212497
+mas "Fantastical 2", id: 975937182          # The ultimate calendar.
 mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
 mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
 mas "Noizio", id: 928871589                 # Background noise simulator.
 mas "Pixave", id: 924891282
 mas "Pocket", id: 568494494
 mas "SnippetsLab", id: 1006087419
+mas "Trello", id: 1278508951
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
