@@ -18,12 +18,14 @@ tap "universal-ctags/universal-ctags" # CTags for Vim
 
 brew "openssl"
 brew "awscli"
+brew "asciinema"
 brew "cfssl"                # Cloudflare's PKI toolkit.
 brew "cowsay"               # Just because, why not?
 brew "diff-so-fancy"        # Fancier diff.
 brew "fd"                   # Yet another alternative to 'find'.
 brew "firebase-cli"
 brew "direnv"               # Directory-specific environment variables.
+brew "fortune"              # Digital fortune cookie.
 brew "fzf"                  # Fuzzy search.
 brew "terraform_landscape"  # Better formatting for terraform diffs.
 brew "gawk"                 # GNU Awk.
@@ -38,6 +40,7 @@ brew "htop"                 # Better 'top'.
 brew "httpie"               # Better 'curl'.
 brew "jq"                   # JSON processor.
 brew "json-table"           # Print JSON as a table JSON.
+brew "lolcat"               # Rainbows and unicorns in terminal.
 brew "macvim", link: false
 brew "mas"                  # CLI for Mac App Store.
 brew "ncdu"                 # Disk space analyser.
@@ -45,7 +48,9 @@ brew "neovim"
 brew "nmap"                 # Port scanning.
 brew "nnn"                  # Noice is Not Noice, a nicer fork...
 brew "nvm"                  # Node.js version manager.
+brew "pinentry-mac"         # For entering GPG signing passphrase.
 brew "pre-commit"           # Pre-commit hooks.
+brew "postgres"
 brew "pv"                   # Monitor progress through a pipe.
 brew "pyenv"                # Python version manager.
 brew "rbenv"                # Ruby version manager.
@@ -68,6 +73,7 @@ brew "watchman"             # File watching service.
 brew "wget"
 brew "wrk"                  # Better alternative to 'ab'.
 brew "yarn"
+brew "ykman"                # Yubikey manager.
 brew "z"                    # Jump to directories based on "frecency".
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
@@ -111,6 +117,7 @@ cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
 cask "jetbrains-toolbox"
+cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
 # cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"

@@ -27,6 +27,3 @@
 
 [diff]
   colorMoved = zebra          # For differently render moved lines.
-
-[gpg]
-  program = /usr/local/MacGPG2/bin/gpg2  # Explicitly define GPG program in case there are multiple.
