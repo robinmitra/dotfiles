@@ -2,11 +2,11 @@
 # Taps #
 ########
 
-tap "caskroom/fonts"                  # For fonts (e.g. Fira Code)
-tap "caskroom/versions"
-tap "caskroom/cask"                   # For installing Casks.
 tap "domt4/autoupdate"                # Auto-update for Homebrew!
 tap "goles/battery"                   # For battery.
+tap "homebrew/cask"                   # For installing Casks.
+tap "homebrew/cask-fonts"             # For fonts (e.g. Fira Code)
+tap "homebrew/cask-versions"          # Provides alternate versions of casks.
 tap "homebrew/core"
 tap "homebrew/bundle"                 # Makes it possible to use this file!
 tap "homebrew/services"               # Simplifies the process of running services with launchctl.
@@ -81,6 +81,20 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # Casks #
 #########
 
+# Fonts
+
+cask "font-consolas-for-powerline"
+cask "font-fira-code"             # Coolest font ever.
+cask "font-menlo-for-powerline"
+cask "font-meslo-for-powerline"
+cask "font-roboto"
+cask "font-roboto-mono"
+cask "font-roboto-slab"
+cask "font-rubik"
+cask "font-source-code-pro"
+
+# Applications
+
 cask "alfred"
 cask "appcleaner"           # Completely wipes an app and associated data.
 cask "appium"               # Mobile app automation.
@@ -90,32 +104,20 @@ cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
 cask "boom-3d"              # You know, for sound!
 cask "caret"                # The ultimate markdown editor.
-cask "caskroom/fonts/font-consolas-for-powerline"
-cask "caskroom/fonts/font-fira-code"                      # Coolest font ever.
-cask "caskroom/fonts/font-fira-mono-for-powerline"
-cask "caskroom/fonts/font-menlo-for-powerline"
-cask "caskroom/fonts/font-meslo-for-powerline"
-cask "caskroom/fonts/font-source-code-pro-for-powerline"
-cask "caskroom/versions/docker-edge"
-cask "caskroom/versions/firefox-developer-edition"
-cask "caskroom/versions/java8"
-cask "caskroom/versions/opera-developer"
 cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current app.
+cask "docker-edge"
 cask "dash"                 # Documentation on steroids.
 cask "dropbox"
 cask "evernote"
-# cask "fantastical"        # The ultimate calendar. Installed using `masz due to App Store licencing.
-cask "font-source-code-pro"
-cask "font-roboto"
-cask "font-roboto-mono"
-cask "font-roboto-slab"
+cask "firefox-developer-edition"
 cask "free-ruler"           # Old but pretty solid visual ruler.
 cask "gas-mask"             # Hosts file manager.
-# cask "genymotion"
+# cask "genymotion"         # Not using these days due to emulator improvements in recent years.
 cask "google-chrome"
 cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
+cask "java8"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
@@ -126,6 +128,23 @@ cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
 cask "now" 
+cask "opera-developer"
+cask "paw"
+cask "pennywise"            # Always-on-top floating browser.
+cask "rescuetime"           # So I can track my distractions!
+cask "sequel-pro"
+cask "sketch"
+cask "skitch"               # Better screenshotting.
+cask "slack"
+cask "spectacle"            # Window organiser I can't live without!
+cask "spotify"
+cask "ubersicht"            # Desktop widgets.
+cask "visual-studio-code"
+cask "vivaldi"
+cask "whatsapp"
+
+# Quicklook generators
+
 cask "qlcolorcode"          # Quicklook generator for syntax highlighting for code.
 cask "qlimagesize"          # Quicklook generator for showing image size and dimension.
 cask "qlmarkdown"           # Quicklook generator for markdown files.
@@ -136,20 +155,7 @@ cask "quicklook-csv"        # Quicklook generator for CSV files.
 cask "quicklook-json"       # Quicklook generator for JSON files.
 cask "quicklook-pat"        # Quicklook generator for Adobe Pattern files.
 cask "quicklookase"         # Quicklook generator for Adobe Swatch Exchange files.
-cask "paw"
-cask "pennywise"            # Always-on-top floating browser.
-cask "rescuetime"           # So I can track my distractions!
-cask "sequel-pro"
-cask "sketch"
-cask "skitch"               # Better screenshot-ting.
-cask "slack"
-cask "spectacle"            # Window organiser I can't live without!
-cask "spotify"
-cask "ubersicht"            # Desktop widgets.
-cask "visual-studio-code"
-cask "vivaldi"
 cask "webpquicklook"        # Quicklook generator for WebP files.
-cask "whatsapp"
 
 #############
 # App Store #
@@ -158,7 +164,7 @@ cask "whatsapp"
 mas "Amphetamine", id: 937984704            # Keeps Mac awake!
 mas "Bear", id: 1091189122
 mas "Byword", id: 420212497
-mas "Fantastical 2", id: 975937182          # The ultimate calendar.
+mas "Fantastical 2", id: 975937182          # The ultimate calendar (installed via mas due to licencing).
 mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
 mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
 mas "Noizio", id: 928871589                 # Background noise simulator.
