@@ -7,6 +7,7 @@ tap "goles/battery"                   # For battery.
 tap "homebrew/cask"                   # For installing Casks.
 tap "homebrew/cask-fonts"             # For fonts (e.g. Fira Code)
 tap "homebrew/cask-versions"          # Provides alternate versions of casks.
+tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/bundle"                 # Makes it possible to use this file!
 tap "homebrew/services"               # Simplifies the process of running services with launchctl.
@@ -17,6 +18,8 @@ tap "universal-ctags/universal-ctags" # CTags for Vim
 ############
 
 brew "openssl"
+brew "ack"
+brew "ag"
 brew "awscli"
 brew "asciinema"
 brew "cfssl"                # Cloudflare's PKI toolkit.
@@ -124,6 +127,7 @@ cask "keybase"
 # cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
+cask "macdown"
 cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
@@ -141,6 +145,7 @@ cask "spotify"
 cask "ubersicht"            # Desktop widgets.
 cask "visual-studio-code"
 cask "vivaldi"
+cask "webtorrent"
 cask "whatsapp"
 
 # Quicklook generators
