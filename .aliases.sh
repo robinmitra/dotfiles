@@ -54,8 +54,9 @@ alias play="cd $PLAY"
 #######
 
 alias gpo="gp origin"
-alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset %C(dim white)▹%Creset %C(green)%cr%Creset %C(dim green)%cd%Creset %C(dim white)▹%Creset %C(magenta)%an %C(dim magenta)<%ae>%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset %C(dim cyan)%GS%GK%Creset %C(auto)%+D%Creset %n%s%n' --date=format:'%a %d %b %y, %H:%m'"
-alias glogc="git log --color --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %C(dim white)▹%Creset %s %C(dim white)▹%Creset %Cgreen%cr%Creset %C(dim white)▹%Creset %C(magenta)%an%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset'"
+alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset %C(red dim)%H%Creset %C(dim white)▹%Creset %C(auto)%D%Creset %n%C(dim green)committed%Creset %C(green)%cr%Creset %C(dim green)%cd%Creset %C(magenta dim)by%Creset %C(magenta)%cn %C(dim magenta)<%ce>%Creset %C(cyan dim)signed%Creset %C(cyan)%G?%Creset%C(cyan dim)% GK%Creset%C(cyan dim)% GS%Creset %n%C(dim blue)authored%Creset %C(blue)%ar%Creset %C(dim blue)%ad%Creset %C(magenta dim)by%Creset %C(magenta)%an %C(dim magenta)<%ae>%Creset %n%n%C(yellow)%B%Creset' --date=format:'%a %d %b %y, %H:%m'"
+alias glogc="git log --color --graph --pretty=format:'%Cred%h%Creset %C(dim white)▹%Creset %C(green)%cr%Creset %C(dim green)%cd%Creset %C(dim white)▹%Creset %C(magenta)%an %C(dim magenta)<%ae>%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset %C(dim cyan)%GS%GK%Creset %C(auto)%+D%Creset %n%s%n' --date=format:'%a %d %b %y, %H:%m'"
+alias glogcc="git log --color --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %C(dim white)▹%Creset %s %C(dim white)▹%Creset %Cgreen%cr%Creset %C(dim white)▹%Creset %C(magenta)%an%Creset %C(dim white)▹%Creset %C(cyan)%G?%Creset'"
 alias gla="git config -l | grep alias | cut -c 7-"
 alias gtag="git log --tags --color --graph --simplify-by-decoration --pretty=format:'%C(green)%cr%Creset %C(dim green)%cd%Creset %C(auto)%D%Creset' --date=format:'%a %d %b %y, %H:%m'"
 
