@@ -34,6 +34,7 @@ brew "terraform_landscape"  # Better formatting for terraform diffs.
 brew "gawk"                 # GNU Awk.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
+brew "git-secrets"          # Prevent from committing secrets and credentials.
 brew "gnupg"
 brew "graphviz"             # For UML diagram generation using PlantUML.
 brew "grc"                  # Generic colouriser (e.g. ping).
@@ -95,6 +96,10 @@ cask "font-roboto-mono"
 cask "font-roboto-slab"
 cask "font-rubik"
 cask "font-source-code-pro"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-duospace"
+cask "font-ia-writer-quattro"
+cask "font-ia-writer-mono"
 
 # Applications
 
