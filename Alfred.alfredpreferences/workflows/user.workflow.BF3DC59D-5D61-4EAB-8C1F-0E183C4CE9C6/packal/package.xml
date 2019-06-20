@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>relaunched</name>
-  <version>1.0.1</version>
-  <bundle>com.tildeslash.relaunched</bundle>
-  <updated>1408895116</updated>
-  <file>relaunched.alfredworkflow</file>
-</workflow>

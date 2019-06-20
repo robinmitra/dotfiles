@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Scratchpad Workflow</name>
-  <version>1.0</version>
-  <bundle>com.customct.ScratchPad</bundle>
-  <updated>1391753897</updated>
-  <file>scratchpad.alfredworkflow</file>
-</workflow>

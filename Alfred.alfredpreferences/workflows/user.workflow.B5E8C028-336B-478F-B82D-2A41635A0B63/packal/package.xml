@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Expand Link</name>
-  <version>1.0</version>
-  <bundle>com.mattbanks.expandlink</bundle>
-  <updated>1412691234</updated>
-  <file>expand_link.alfredworkflow</file>
-</workflow>

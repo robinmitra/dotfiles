@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>TemplatesManager</name>
-  <version>1.0</version>
-  <bundle>com.vitorgalvao.alfred.templatesmanager</bundle>
-  <updated>1401821171</updated>
-  <file>templatesmanager.alfredworkflow</file>
-</workflow>

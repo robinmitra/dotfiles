@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>CoffeeCoffee</name>
-  <version>1.0</version>
-  <bundle>com.vitorgalvao.alfred.coffeecoffee</bundle>
-  <updated>1390259917</updated>
-  <file>coffeecoffee.alfredworkflow</file>
-</workflow>

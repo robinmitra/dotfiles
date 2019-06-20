@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Calendar</name>
-  <version>1.2</version>
-  <bundle>zmin.calendar</bundle>
-  <updated>1423517534</updated>
-  <file>calendar.alfredworkflow</file>
-</workflow>

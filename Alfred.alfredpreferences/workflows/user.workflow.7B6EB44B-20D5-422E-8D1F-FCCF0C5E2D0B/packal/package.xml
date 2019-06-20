@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>App Shortcuts</name>
-  <version>1.0</version>
-  <bundle>com.firedev.app_shortcuts</bundle>
-  <updated>1395461098</updated>
-  <file>app_shortcuts.alfredworkflow</file>
-</workflow>

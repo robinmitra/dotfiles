@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Forecast</name>
-  <version>0.0.7</version>
-  <bundle>com.kejadlen.forecast</bundle>
-  <updated>1420502954</updated>
-  <file>forecast.alfredworkflow</file>
-</workflow>

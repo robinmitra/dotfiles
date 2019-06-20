@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Zip Info</name>
-  <version>1.0</version>
-  <bundle>com.customct.ZipInfo</bundle>
-  <updated>1405050717</updated>
-  <file>zipinfo.alfredworkflow</file>
-</workflow>

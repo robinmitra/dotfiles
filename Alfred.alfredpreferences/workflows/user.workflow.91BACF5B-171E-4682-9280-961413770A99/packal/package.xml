@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Readme</name>
-  <version>1.0</version>
-  <bundle>com.badwing.readme</bundle>
-  <updated>1406426857</updated>
-  <file>readme.alfredworkflow</file>
-</workflow>

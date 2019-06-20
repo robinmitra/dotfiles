@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Favorites</name>
-  <version>1.0</version>
-  <bundle>tylereich.favorites</bundle>
-  <updated>1398825064</updated>
-  <file>favorites.alfredworkflow</file>
-</workflow>

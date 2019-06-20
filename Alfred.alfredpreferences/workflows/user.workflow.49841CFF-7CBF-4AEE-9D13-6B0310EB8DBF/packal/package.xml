@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>OmniTube</name>
-  <version>4.3</version>
-  <bundle>co.nf.ritashugisha.omnitube</bundle>
-  <updated>1396385897</updated>
-  <file>omnitube_4.3.alfredworkflow</file>
-</workflow>

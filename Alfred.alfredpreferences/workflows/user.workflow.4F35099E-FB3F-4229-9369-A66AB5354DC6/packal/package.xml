@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>todo</name>
-  <version>1.0</version>
-  <bundle>florian.todo</bundle>
-  <updated>1413940693</updated>
-  <file>todo.alfredworkflow</file>
-</workflow>

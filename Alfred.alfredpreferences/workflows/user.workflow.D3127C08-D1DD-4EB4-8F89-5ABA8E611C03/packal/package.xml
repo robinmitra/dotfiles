@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Forvo</name>
-  <version>1.0</version>
-  <bundle>zmin.forvo</bundle>
-  <updated>1419450771</updated>
-  <file>forvo.alfredworkflow</file>
-</workflow>

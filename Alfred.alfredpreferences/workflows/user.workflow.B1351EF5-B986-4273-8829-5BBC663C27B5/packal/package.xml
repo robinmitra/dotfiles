@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Shakespearean Insult Generator</name>
-  <version>1.0</version>
-  <bundle>info.oddgeek.bard</bundle>
-  <updated>1419216048</updated>
-  <file>shakespearean_insult_generator.alfredworkflow</file>
-</workflow>

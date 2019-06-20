@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Google URL Shortener</name>
-  <version>1.0.0</version>
-  <bundle>com.kopepasah.google-url-shortener</bundle>
-  <updated>1390176520</updated>
-  <file>google.url_.shortener.alfredworkflow</file>
-</workflow>

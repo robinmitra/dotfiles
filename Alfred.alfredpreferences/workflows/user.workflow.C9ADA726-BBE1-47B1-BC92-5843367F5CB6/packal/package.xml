@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Autojump</name>
-  <version>1.0</version>
-  <bundle>com.lepht.alfred.autojump</bundle>
-  <updated>1421799412</updated>
-  <file>autojump.alfredworkflow</file>
-</workflow>

@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Epoch Converter</name>
-  <version>1.0</version>
-  <bundle>com.boulderhopkins.epoch</bundle>
-  <updated>1423357396</updated>
-  <file>epoch_conversion.alfredworkflow</file>
-</workflow>

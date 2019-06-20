@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Spritzr</name>
-  <version>1.1</version>
-  <bundle>com.hackademic.spritzr</bundle>
-  <updated>1406670551</updated>
-  <file>spritzr.alfredworkflow</file>
-</workflow>

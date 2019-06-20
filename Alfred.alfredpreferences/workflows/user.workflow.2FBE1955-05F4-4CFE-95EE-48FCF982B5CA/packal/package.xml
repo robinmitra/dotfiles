@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<workflow>
-  <name>Domainr</name>
-  <version>1.0</version>
-  <bundle>com.spr.domainr</bundle>
-  <updated>1412724018</updated>
-  <file>domainr.alfredworkflow</file>
-</workflow>
