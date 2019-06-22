@@ -12,3 +12,20 @@ Host github.com
   User git
   HostName github.com
   IdentityFile ~/.ssh/id_rsa
+
+Host gitlab
+	User git
+	HostName gitlab.com
+	IdentityFile ~/.ssh/id_rsa
+
+Host bitbucket
+    User git
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/id_rsa
+
+############
+## Global ##
+############
+
+ServerAliveInterval 300
+IdentityFile ~/.ssh/id_rsa
