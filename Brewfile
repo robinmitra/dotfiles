@@ -57,6 +57,7 @@ brew "pre-commit"           # Pre-commit hooks.
 brew "postgres"
 brew "pv"                   # Monitor progress through a pipe.
 brew "pyenv"                # Python version manager.
+brew "ranger"               # CLI file manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
@@ -72,6 +73,7 @@ brew "thefuck"              # Correct the f*cked up commands!
 brew "trash" 
 brew "tree"                 # GNU tree utility.
 brew "typespeed"            # Speed typing command-line game.
+brew "ultralist"            # CLI task management.
 brew "watch"
 brew "watchman"             # File watching service.
 brew "wget"
