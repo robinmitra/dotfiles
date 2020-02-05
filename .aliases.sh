@@ -26,6 +26,7 @@ alias edit-hosts="sudo $EDITOR /etc/hosts"
 alias c="highlight -O ansi -l" # in other words, a better 'cat'.
 alias dspace="df -Hl" # H: human-format (with base 10), l: local mounts only.
 alias fsize="stat -f \"%z bytes\""
+alias weather="curl wttr.in/London"
 
 #######
 # ZSH #
@@ -35,6 +36,7 @@ alias zr="source ~/.zshrc"
 alias zc="vim ~/.zshrc"
 alias zp="vim ~/.zpreztorc"
 alias za="vim ~/.aliases.sh"
+alias zf="vim ~/.functions.sh"
 
 ############
 # Homebrew #
