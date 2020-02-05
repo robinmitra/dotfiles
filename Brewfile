@@ -143,6 +143,7 @@ cask "opera-developer"
 cask "paw"
 cask "pennywise"            # Always-on-top floating browser.
 cask "pocket-casts"
+cask "product-hunt"
 cask "rescuetime"           # So I can track my distractions!
 cask "sequel-pro"
 cask "sketch"

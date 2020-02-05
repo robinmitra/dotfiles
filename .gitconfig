@@ -29,7 +29,9 @@
   colorMoved = zebra          # For differently render moved lines.
 
 [url "git@github.com:"]
-	insteadOf = https://github.com/ # Needed in order for 'go get' to download from private repos.
+# Needed in order for 'go get' to download from private repos.
+# However, this causes settings repository sync to fail, and hence commented out.
+# insteadOf = https://github.com/
 
 [secrets]
 	providers = git secrets --aws-provider
