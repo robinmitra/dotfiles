@@ -44,6 +44,16 @@ function setup-personal-repo() {
   setup-gpg
 }
 
+function aws-login() {
+  if [[ $1 == "work" ]]; then
+    echo "Logging into your work AWS account."
+    aws-vault login --mfa-token=$(ykman oath code -s gds-users) govwifi
+  else
+    echo "Logging into your personal AWS account."
+    aws-vault login --mfa-token=$(ykman oath code -s robin) robin
+  fi
+}
+
 fzf-down() {
   fzf --height 50% "$@" --border
 }
