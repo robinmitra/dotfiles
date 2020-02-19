@@ -54,6 +54,19 @@ function aws-login() {
   fi
 }
 
+function port() {
+  LSOF=$(lsof -i tcp:"$1")
+  if [[ $? == 0 ]]; then
+    echo "> lsof:"
+    echo $LSOF
+    echo
+    echo "> netstat:"
+    netstat -vanp tcp | egrep "Proto|\.$1\ "
+  else
+    echo "Port $1 is not being used."
+  fi
+}
+
 fzf-down() {
   fzf --height 50% "$@" --border
 }
