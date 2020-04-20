@@ -3,6 +3,7 @@
 ########
 
 tap "domt4/autoupdate"                # Auto-update for Homebrew!
+tap "github/gh"                       # Github CLI.
 tap "goles/battery"                   # For battery.
 tap "homebrew/cask"                   # For installing Casks.
 tap "homebrew/cask-fonts"             # For fonts (e.g. Fira Code)
@@ -32,6 +33,7 @@ brew "fortune"              # Digital fortune cookie.
 brew "fzf"                  # Fuzzy search.
 brew "terraform_landscape"  # Better formatting for terraform diffs.
 brew "gawk"                 # GNU Awk.
+brew "gh"                   # Github CLI.
 brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "git-secrets"          # Prevent from committing secrets and credentials.
@@ -91,6 +93,7 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
 cask "font-consolas-for-powerline"
 cask "font-fira-code"             # Coolest font ever.
+cask "font-jetbrains-mono"
 cask "font-menlo-for-powerline"
 cask "font-meslo-for-powerline"
 cask "font-roboto"
@@ -156,6 +159,7 @@ cask "visual-studio-code"
 cask "vivaldi"
 cask "webtorrent"
 cask "whatsapp"
+cask "writemapper"          # Mind mapping.
 
 # Quicklook generators
 
