@@ -6,7 +6,7 @@ TEMPLATE_FILES = .netrc .pypirc
 
 .PHONY: setup-dot-files setup-history setup-ssh-config
 
-setup: setup-dot-files setup-history-files setup-ssh-config
+setup: setup-dot-files setup-history-files setup-ssh-config setup-from-templates setup-docker-config
 
 # Manual steps:
 # 1. Install ZSH.
@@ -37,7 +37,7 @@ setup-history-files:
 
 # Step 4
 setup-ssh-config:
-	@echo -e "\nSetting up ssh config..."
+	@echo -e "\nSetting up SSH config..."
 	@[ ! -f ~/.ssh/config ] && ln -s $$(pwd)/sshconfig ~/.ssh/config && echo "SSH config created." || echo "Skipping SSH config as it already exists."
 	@echo -e "Done."
 
@@ -48,3 +48,9 @@ setup-from-templates:
 		[ ! -f ~/$$file ] && cp $$(pwd)/$$file ~/$$file && echo "File '$$file' created." || echo "Skipping '$$file' as it already exists.";  \
 	done
 	@echo -e "Done. Don't forget to update the placeholder credentials!"
+
+# Step 6
+setup-docker-config:
+	@echo -e "\nSetting up Docker config..."
+	@[ ! -f ~/.docker/config.json ] && ln -s $$(pwd)/docker/config.json ~/.docker/config.json && echo "Docker config created." || echo "Skipping Docker config as it already exists."
+	@echo -e "Done."

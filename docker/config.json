@@ -1,0 +1,12 @@
+{
+  "credsStore" : "desktop",
+  "credSstore" : "desktop",
+  "auths" : {
+    "https://index.docker.io/v1/" : {
+
+    }
+  },
+  "stackOrchestrator" : "swarm",
+  "psFormat": "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Networks}}",
+  "imagesFormat": "table {{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.CreatedSince}}\t{{.Size}}"
+}
