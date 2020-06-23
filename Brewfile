@@ -72,6 +72,7 @@ brew "terminal-notifier"
 brew "tfenv"                # Terraform version manager.
 brew "the_silver_searcher"  # Yet another alternative to 'grep'.
 brew "thefuck"              # Correct the f*cked up commands! 
+brew "tldr"                 # More helpful man pages.
 brew "trash" 
 brew "tree"                 # GNU tree utility.
 brew "typespeed"            # Speed typing command-line game.
