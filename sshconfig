@@ -1,4 +1,4 @@
-Include config.d/*
+Include ~/.ssh/config.d/*
 
 ServerAliveInterval 300
 IdentityFile ~/.ssh/id_rsa
@@ -16,5 +16,15 @@ Host gitlab
 	HostName gitlab.com
 
 Host bitbucket
-    User git
-    HostName bitbucket.org
+  User git
+  HostName bitbucket.org
+
+Host home-assistant-wired
+  User root
+  HostName 192.168.86.202
+  IdentityFile ~/.ssh/personal.id_rsa 
+
+Host home-assistant-wifi
+  User root
+  HostName 192.168.86.203
+  IdentityFile ~/.ssh/personal.id_rsa 
