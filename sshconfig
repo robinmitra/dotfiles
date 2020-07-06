@@ -12,8 +12,8 @@ Host github github.com
   HostName github.com
 
 Host gitlab
-	User git
-	HostName gitlab.com
+  User git
+  HostName gitlab.com
 
 Host bitbucket
   User git

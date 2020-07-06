@@ -11,6 +11,9 @@ setup: setup-dot-files setup-history-files setup-ssh-config setup-from-templates
 # Manual steps:
 # 1. Install ZSH.
 # 2. Copy over AWS credentials.
+# 3. Install Prezto.
+# 4. Import GPG private/public key pairs.
+# 5. Enable FZF bindings.
 
 # Step 1
 setup-brew:

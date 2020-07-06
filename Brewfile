@@ -131,7 +131,7 @@ cask "google-chrome"
 cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
-cask "java8"
+cask "java11"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
