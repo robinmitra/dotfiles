@@ -73,7 +73,7 @@ brew "tfenv"                # Terraform version manager.
 brew "the_silver_searcher"  # Yet another alternative to 'grep'.
 brew "thefuck"              # Correct the f*cked up commands! 
 brew "tldr"                 # More helpful man pages.
-brew "trash" 
+brew "trash"
 brew "tree"                 # GNU tree utility.
 brew "typespeed"            # Speed typing command-line game.
 brew "ultralist"            # CLI task management.
@@ -146,6 +146,7 @@ cask "now"
 cask "opera-developer"
 cask "paw"
 cask "pennywise"            # Always-on-top floating browser.
+cask "pluralsight"
 cask "pocket-casts"
 cask "product-hunt"
 cask "rescuetime"           # So I can track my distractions!
@@ -155,6 +156,7 @@ cask "skitch"               # Better screenshotting.
 cask "slack"
 cask "spectacle"            # Window organiser I can't live without!
 cask "spotify"
+cask "tunnelbear"
 cask "ubersicht"            # Desktop widgets.
 cask "visual-studio-code"
 cask "vivaldi"
