@@ -29,10 +29,10 @@
 [diff]
   colorMoved = zebra          # For differently render moved lines.
 
-[url "git@github.com:"]
 # Needed in order for 'go get' to download from private repos.
-# However, this causes settings repository sync to fail, and hence commented out.
-# insteadOf = https://github.com/
+# Comment out if this causes settings repository sync to fail.
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 
 [secrets]
 	providers = git secrets --aws-provider
@@ -41,5 +41,6 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
 [pull]
 	ff = only

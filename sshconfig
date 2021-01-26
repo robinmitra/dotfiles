@@ -1,7 +1,7 @@
 Include ~/.ssh/config.d/*
 
 ServerAliveInterval 300
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/personal.id_rsa 
 
 Host *
  AddKeysToAgent yes
@@ -22,9 +22,7 @@ Host bitbucket
 Host home-assistant-wired
   User root
   HostName 192.168.86.202
-  IdentityFile ~/.ssh/personal.id_rsa 
 
 Host home-assistant-wifi
   User root
   HostName 192.168.86.203
-  IdentityFile ~/.ssh/personal.id_rsa 
