@@ -12,6 +12,7 @@ tap "homebrew/command-not-found"
 tap "homebrew/core"
 tap "homebrew/bundle"                 # Makes it possible to use this file!
 tap "homebrew/services"               # Simplifies the process of running services with launchctl.
+tap "muesli/tap"                      # For duf tool.
 tap "universal-ctags/universal-ctags" # CTags for Vim
 
 ############
@@ -26,6 +27,7 @@ brew "asciinema"
 brew "cfssl"                # Cloudflare's PKI toolkit.
 brew "cowsay"               # Just because, why not?
 brew "diff-so-fancy"        # Fancier diff.
+brew "duf"                  # Better du (the htop of du!)
 brew "fd"                   # Yet another alternative to 'find'.
 brew "firebase-cli"
 brew "direnv"               # Directory-specific environment variables.
