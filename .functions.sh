@@ -44,6 +44,10 @@ function setup-personal-repo() {
   setup-gpg
 }
 
+#######
+# AWS #
+#######
+
 function aws-login() {
   if [[ $1 == "work" ]]; then
     echo "Logging into your work AWS account."
@@ -110,4 +114,18 @@ fn-gr() {
   fzf-down --tac \
     --preview 'git log --oneline --graph --date=short --pretty="format:%C(auto)%cd %h%d %s" {1} | head -200' |
   cut -d$'\t' -f1
+}
+
+##########
+# Docker #
+##########
+
+
+function docker-tags() {
+  if [[ -z $1 ]]; then
+    echo "The name of the Docker repository must be provided."
+    return 1
+  else
+    wget -q https://registry.hub.docker.com/v1/repositories/$1/tags -O -  | sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' | tr '}' '\n'  | awk -F: '{print $3}'
+  fi
 }
