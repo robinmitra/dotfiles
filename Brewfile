@@ -64,6 +64,7 @@ brew "pyenv"                # Python version manager.
 brew "ranger"               # CLI file manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
+brew "scroll-reverser"      # Reverse scroll direction (useful when using natural scrolling with trackpad)
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "speedcrunch"          # Keyboard-centric scientific calculator.
@@ -140,6 +141,7 @@ cask "keybase"
 # cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
+cask "marta"                # File system browser.
 cask "macdown"
 cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
