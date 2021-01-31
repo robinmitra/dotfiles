@@ -24,7 +24,6 @@ brew "ack"
 brew "ag"
 brew "awscli"
 brew "asciinema"
-brew "cfssl"                # Cloudflare's PKI toolkit.
 brew "cowsay"               # Just because, why not?
 brew "diff-so-fancy"        # Fancier diff.
 brew "duf"                  # Better du (the htop of du!)
@@ -80,6 +79,7 @@ brew "trash"
 brew "tree"                 # GNU tree utility.
 brew "typespeed"            # Speed typing command-line game.
 brew "ultralist"            # CLI task management.
+brew "vercel-cli"
 brew "watch"
 brew "watchman"             # File watching service.
 brew "wget"
@@ -119,7 +119,7 @@ cask "avibrazil-rdm"        # Custom resolutions on Retina display.
 cask "aws-vault"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
-cask "boom-3d"              # You know, for sound!
+#cask "boom-3d"              # You know, for sound!
 cask "caret"                # The ultimate markdown editor.
 cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current app.
 cask "docker-edge"
@@ -134,7 +134,6 @@ cask "google-chrome"
 cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
-cask "java11"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
@@ -146,13 +145,12 @@ cask "macdown"
 cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
 cask "noti"                 # Android notifications on Mac.
-cask "now" 
 cask "opera-developer"
 cask "paw"
 cask "pennywise"            # Always-on-top floating browser.
 cask "pluralsight"
-cask "pocket-casts"
-cask "product-hunt"
+#cask "pocket-casts"
+#cask "product-hunt"
 cask "rescuetime"           # So I can track my distractions!
 cask "sequel-pro"
 cask "sketch"
@@ -164,7 +162,7 @@ cask "tunnelbear"
 cask "ubersicht"            # Desktop widgets.
 cask "visual-studio-code"
 cask "vivaldi"
-cask "webtorrent"
+#cask "webtorrent"
 cask "whatsapp"
 cask "writemapper"          # Mind mapping.
 
@@ -187,7 +185,7 @@ cask "webpquicklook"        # Quicklook generator for WebP files.
 #############
 
 mas "Amphetamine", id: 937984704            # Keeps Mac awake!
-mas "Bear", id: 1091189122
+#mas "Bear", id: 1091189122
 mas "Byword", id: 420212497
 mas "Fantastical 2", id: 975937182          # The ultimate calendar (installed via mas due to licencing).
 mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
