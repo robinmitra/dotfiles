@@ -191,6 +191,7 @@ mas "Bear", id: 1091189122
 mas "Byword", id: 420212497
 mas "Fantastical 2", id: 975937182          # The ultimate calendar (installed via mas due to licencing).
 mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
+mas "Home Assistant", id: 1099568401
 mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
 mas "Noizio", id: 928871589                 # Background noise simulator.
 mas "Pixave", id: 924891282
@@ -198,4 +199,5 @@ mas "Pocket", id: 568494494
 mas "SnippetsLab", id: 1006087419
 mas "Trello", id: 1278508951
 mas "Unsplash Wallpapers", id: 1284863847
+mas "Webcam Settings", id: 533696630
 mas "Xcode", id: 497799835
