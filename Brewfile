@@ -6,6 +6,7 @@ tap "domt4/autoupdate"                # Auto-update for Homebrew!
 tap "github/gh"                       # Github CLI.
 tap "goles/battery"                   # For battery.
 tap "homebrew/cask"                   # For installing Casks.
+tap "homebrew/cask-drivers"           # For Logitech Options.
 tap "homebrew/cask-fonts"             # For fonts (e.g. Fira Code)
 tap "homebrew/cask-versions"          # Provides alternate versions of casks.
 tap "homebrew/command-not-found"
@@ -39,12 +40,14 @@ brew "git"
 brew "git-extras"           # Pretty useful extra commands for Git.
 brew "git-secrets"          # Prevent from committing secrets and credentials.
 brew "gnupg"
+brew "go"
 brew "graphviz"             # For UML diagram generation using PlantUML.
 brew "grc"                  # Generic colouriser (e.g. ping).
 brew "hub"                  # Github helper.
 brew "highlight"            # Syntax highlighting.
 brew "htop"                 # Better 'top'.
 brew "httpie"               # Better 'curl'.
+brew "java"                 # OpenJDK.
 brew "jq"                   # JSON processor.
 brew "json-table"           # Print JSON as a table JSON.
 brew "lolcat"               # Rainbows and unicorns in terminal.
@@ -63,7 +66,7 @@ brew "pyenv"                # Python version manager.
 brew "ranger"               # CLI file manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
-brew "scroll-reverser"      # Reverse scroll direction (useful when using natural scrolling with trackpad)
+brew "scroll-reverser"      # Reverse scroll direction (useful when using natural scrolling with trackpad). No longer needed as Logitech software does this natively.
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "speedcrunch"          # Keyboard-centric scientific calculator.
@@ -119,27 +122,31 @@ cask "avibrazil-rdm"        # Custom resolutions on Retina display.
 cask "aws-vault"            # Credentials management for AWS.
 cask "bartender"            # Allows hiding unnecessary menu bar apps.
 cask "betterzip"            # Quicklook generator for zip files.
-#cask "boom-3d"              # You know, for sound!
+#cask "boom-3d"             # You know, for sound! Was getting bloated, so trying out eqmac.
 cask "caret"                # The ultimate markdown editor.
 cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current app.
 cask "docker-edge"
 cask "dash"                 # Documentation on steroids.
 cask "dropbox"
+cask "eqmac"                # Open source equaliser. Replaces Boom for me.
 cask "evernote"
 cask "firefox-developer-edition"
 cask "free-ruler"           # Old but pretty solid visual ruler.
 cask "gas-mask"             # Hosts file manager.
 # cask "genymotion"         # Not using these days due to emulator improvements in recent years.
 cask "google-chrome"
+cask "google-cloud-sdk"     # For things like gcloud CLI.
 cask "hyper"                # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
+cask "kindle"
 # cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
+cask "logitech-options"
 cask "marta"                # File system browser.
 cask "macdown"
 cask "notion"
@@ -190,7 +197,7 @@ mas "Byword", id: 420212497
 mas "Fantastical 2", id: 975937182          # The ultimate calendar (installed via mas due to licencing).
 mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
 mas "Home Assistant", id: 1099568401
-mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
+#mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins). Probably no longer needed.
 mas "Noizio", id: 928871589                 # Background noise simulator.
 mas "Pixave", id: 924891282
 mas "Pocket", id: 568494494
