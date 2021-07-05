@@ -10,11 +10,12 @@ GPG_FILES = gpg-agent.conf gpg.conf
 setup: setup-dot-files setup-history-files setup-ssh-config setup-from-templates setup-docker-config
 
 # Manual steps:
+# 1. Install Homebrew.
 # 1. Install ZSH.
-# 2. Copy over AWS credentials.
-# 3. Install Prezto.
-# 4. Import GPG private/public key pairs.
-# 5. Enable FZF bindings.
+# 1. Copy over AWS credentials.
+# 1. Install Prezto.
+# 1. Import GPG private/public key pairs.
+# 1. Enable FZF bindings.
 
 # Step 1
 setup-brew:
