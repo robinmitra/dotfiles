@@ -3,18 +3,10 @@
 ########
 
 tap "domt4/autoupdate"                # Auto-update for Homebrew!
-tap "github/gh"                       # Github CLI.
 tap "goles/battery"                   # For battery.
-tap "homebrew/cask"                   # For installing Casks.
-tap "homebrew/cask-drivers"           # For Logitech Options.
-tap "homebrew/cask-fonts"             # For fonts (e.g. Fira Code)
-tap "homebrew/cask-versions"          # Provides alternate versions of casks.
 tap "homebrew/command-not-found"
-tap "homebrew/core"
 tap "homebrew/bundle"                 # Makes it possible to use this file!
 tap "homebrew/services"               # Simplifies the process of running services with launchctl.
-tap "muesli/tap"                      # For duf tool.
-tap "universal-ctags/universal-ctags" # CTags for Vim
 
 ############
 # Packages #
@@ -51,7 +43,7 @@ brew "java"                 # OpenJDK.
 brew "jq"                   # JSON processor.
 brew "json-table"           # Print JSON as a table JSON.
 brew "lolcat"               # Rainbows and unicorns in terminal.
-brew "macvim", link: false
+brew "macvim"
 brew "mas"                  # CLI for Mac App Store.
 brew "ncdu"                 # Disk space analyser.
 brew "neovim"
@@ -60,13 +52,12 @@ brew "nnn"                  # Noice is Not Noice, a nicer fork...
 brew "nvm"                  # Node.js version manager.
 brew "pinentry-mac"         # For entering GPG signing passphrase.
 brew "pre-commit"           # Pre-commit hooks.
-brew "postgres"
 brew "pv"                   # Monitor progress through a pipe.
 brew "pyenv"                # Python version manager.
 brew "ranger"               # CLI file manager.
 brew "rbenv"                # Ruby version manager.
 brew "rename"               # Easier batch renaming.
-brew "scroll-reverser"      # Reverse scroll direction (useful when using natural scrolling with trackpad). No longer needed as Logitech software does this natively.
+brew "rich"                 # Better syntax highlighting.
 brew "shellcheck"           # Static analysis and linting for Bash scripts.
 brew "spark"                # Sparkline.
 brew "speedcrunch"          # Keyboard-centric scientific calculator.
@@ -90,7 +81,6 @@ brew "wrk"                  # Better alternative to 'ab'.
 brew "yarn"
 brew "ykman"                # Yubikey manager.
 brew "z"                    # Jump to directories based on "frecency".
-brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
 #########
 # Casks #
@@ -98,11 +88,8 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 
 # Fonts
 
-cask "font-consolas-for-powerline"
 cask "font-fira-code"             # Coolest font ever.
 cask "font-jetbrains-mono"
-cask "font-menlo-for-powerline"
-cask "font-meslo-for-powerline"
 cask "font-roboto"
 cask "font-roboto-mono"
 cask "font-roboto-slab"
@@ -117,61 +104,63 @@ cask "font-ia-writer-mono"
 
 cask "alfred"
 cask "appcleaner"           # Completely wipes an app and associated data.
-cask "appium"               # Mobile app automation.
-cask "avibrazil-rdm"        # Custom resolutions on Retina display.
-cask "aws-vault"            # Credentials management for AWS.
-cask "bartender"            # Allows hiding unnecessary menu bar apps.
+#cask "appium"              # Mobile app automation.
+#cask "aws-vault"           # Credentials management for AWS.
+#cask "bartender"           # Allows hiding unnecessary menu bar apps - now through Setapp.
 cask "betterzip"            # Quicklook generator for zip files.
-#cask "boom-3d"             # You know, for sound! Was getting bloated, so trying out eqmac.
+#cask "boom-3d"             # You know, for sound - now through Setapp!
 cask "caret"                # The ultimate markdown editor.
 cask "cheatsheet"           # Cmd key keyboard shortcut cheatsheet for current app.
-cask "docker-edge"
-cask "dash"                 # Documentation on steroids.
+cask "claude"
+cask "discord"
+cask "docker"
+#cask "dash"                # Documentation on steroids - now through Setapp.
 cask "dropbox"
-cask "eqmac"                # Open source equaliser. Replaces Boom for me.
-cask "evernote"
+#cask "eqmac"               # Open source equaliser. Replaces Boom for me.
+#cask "evernote"
+cask "figma"
 cask "firefox-developer-edition"
 cask "free-ruler"           # Old but pretty solid visual ruler.
 cask "gas-mask"             # Hosts file manager.
-# cask "genymotion"         # Not using these days due to emulator improvements in recent years.
+#cask "genymotion"          # Not using these days due to emulator improvements in recent years.
 cask "google-chrome"
 cask "google-cloud-sdk"     # For things like gcloud CLI.
-cask "hyper"                # I prefer iTerm 2 though.
+#cask "hyper"               # I prefer iTerm 2 though.
 cask "imageoptim"           # Makes images take less space without sacrificing quality.
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"      # Amphetamine alternative available as a Cask.
 cask "keybase"
 cask "kindle"
-# cask "kitematic"          # Visual Docker container manager.
+#cask "kitematic"          # Visual Docker container manager.
 cask "lastpass"
 cask "licecap"              # Gif recording.
-cask "logitech-options"
 cask "marta"                # File system browser.
 cask "macdown"
 cask "notion"
 cask "ngrok"                # Localhost HTTP tunneling FTW!
-cask "noti"                 # Android notifications on Mac.
-cask "opera-developer"
+#cask "noti"                # Android notifications on Mac.
+#cask "opera-developer"
 cask "paw"
-cask "pennywise"            # Always-on-top floating browser.
-cask "pluralsight"
+cask "pennywise"             # Always-on-top floating browser.
+#cask "pluralsight"
 #cask "pocket-casts"
 #cask "product-hunt"
-cask "rescuetime"           # So I can track my distractions!
-cask "sequel-pro"
-cask "sketch"
-cask "skitch"               # Better screenshotting.
+cask "rectangle"             # Replacement for Spectacle that's still maintained.
+cask "rescuetime"            # So I can track my distractions!
+#cask "sequel-pro"
+#cask "sketch"
+cask "skitch"                # Better screenshotting.
 cask "slack"
-cask "spectacle"            # Window organiser I can't live without!
+#cask "spectacle"            # Favourite window manager - now deprecated, replaced by Rectangle.
 cask "spotify"
 cask "tunnelbear"
-cask "ubersicht"            # Desktop widgets.
 cask "visual-studio-code"
 cask "vivaldi"
 #cask "webtorrent"
 cask "whatsapp"
 cask "writemapper"          # Mind mapping.
+cask "zed"
 
 # Quicklook generators
 
@@ -192,17 +181,20 @@ cask "webpquicklook"        # Quicklook generator for WebP files.
 #############
 
 mas "Amphetamine", id: 937984704            # Keeps Mac awake!
-#mas "Bear", id: 1091189122
+mas "Bear", id: 1091189122
+mas "Brother iPrint&Scan", id: 1193539993
 mas "Byword", id: 420212497
+mas "Endel", id: 1346247457
 mas "Fantastical 2", id: 975937182          # The ultimate calendar (installed via mas due to licencing).
-mas "FlagTimes", id: 1234952668             # Flags and times in status bar.
+mas "Timezone Flags", id: 1503844925        # Flags and times in status bar.
 mas "Home Assistant", id: 1099568401
-#mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins). Probably no longer needed.
-mas "Noizio", id: 928871589                 # Background noise simulator.
+mas "LastPass", id: 926036361               # MacOS app (the cask is for browser plugins).
+#mas "Noizio", id: 928871589                # Background noise simulator - now through Setapp.
 mas "Pixave", id: 924891282
 mas "Pocket", id: 568494494
-mas "SnippetsLab", id: 1006087419
-mas "Trello", id: 1278508951
+mas "Amazon Prime", id: 545519333
+#mas "SnippetsLab", id: 1006087419          # Now through Setapp.
+#mas "Trello", id: 1278508951
 mas "Unsplash Wallpapers", id: 1284863847
-mas "Webcam Settings", id: 533696630
+#mas "Webcam Settings", id: 533696630
 mas "Xcode", id: 497799835
